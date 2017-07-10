@@ -1,0 +1,23 @@
+//Fuente Tipográfica
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+$raleway: 'Raleway', sans-serif;
+
+//Colores Marca
+$darken-grey: #292929;
+$grey: #686369;
+$lighten-grey: #e0dcdd;
+$darken-blue: #365164;
+$yellow: #F4BD44;
+$white: #fff;
+
+//Colores Proyecto
+$yummy: #f4bd46;
+$pinterest: #bd081b;
+$pokedex: #ee4037;
+$yape: #00B19F;
+
+body{
+  background: $darken-grey;
+  color: $lighten-grey;
+  font-family: $raleway;
+}
