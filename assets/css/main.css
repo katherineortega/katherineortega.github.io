@@ -807,6 +807,13 @@
 @media (min-width: 1200px) {
   .hidden-lg {
     display: none !important; } }
+/* Format */
+ul {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+/* customize */
 body {
   background: #292929;
   color: #e0dcdd;
@@ -815,6 +822,13 @@ body {
   padding: 0;
   font-size: 15px; }
 
+.row,
+.container {
+  box-sizing: border-box; }
+
+.position-relative {
+  position: relative; }
+
 div[class*='col-'] {
   box-sizing: border-box; }
 
@@ -822,19 +836,31 @@ div[class*='col-'] {
   width: 100%;
   height: auto; }
 
+header {
+  border-bottom: 2px solid #686369;
+  height: 800px; }
+
 nav {
-  padding: 2%;
-  -webkit-border-bottom: linear-gradient(#e0dcdd, #686369); }
+  padding-top: 2%;
+  padding-bottom: 1%;
+  position: relative; }
+  nav.row:before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to left, #686369 5%, transparent 80%);
+    height: 2px;
+    width: 100%;
+    bottom: 0; }
   nav img.img-responsive {
     width: 50%;
     display: block;
     margin: 0 auto; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    padding-top: 1.5%; }
     nav ul li {
       display: inline-block;
-      width: 170px;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       text-align: center;
       border-right: 2px solid #F4BD44; }
       nav ul li a {
@@ -842,5 +868,144 @@ nav {
         text-decoration: none; }
       nav ul li:last-of-type {
         border-right: none; }
+
+.main-section {
+  padding-left: 20%;
+  padding-top: 10%; }
+  .main-section p {
+    font-size: 3rem;
+    margin: 0; }
+    .main-section p.small-title {
+      font-size: 2rem; }
+  .main-section h1 {
+    color: #F4BD44;
+    font-size: 5rem;
+    margin: 20px 0; }
+
+.subtitle {
+  color: #F4BD44;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 10px 0; }
+
+hr {
+  width: 70px;
+  height: 7px;
+  background-color: #686369;
+  border: 0; }
+
+.text {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 5% 0; }
+
+.curriculum {
+  border: 3px solid #686369;
+  padding: 1% 4%;
+  font-weight: 700;
+  text-align: right; }
+
+.about-section {
+  border-bottom: 2px solid #686369;
+  height: 800px;
+  padding-top: 15%; }
+  .about-section .row > div {
+    text-align: center; }
+
+.portfolio {
+  border-bottom: 2px solid #686369; }
+
+.project-section {
+  height: 800px;
+  padding: 11% 0; }
+
+.portfolio-section {
+  border-bottom: 2px solid #686369;
+  height: 800px;
+  padding-top: 10%;
+  text-align: center; }
+  .portfolio-section ul {
+    list-style: none; }
+    .portfolio-section ul a {
+      line-height: 1;
+      color: #e0dcdd;
+      text-decoration: none;
+      font-size: 1.5rem; }
+
+.logo-proyecto {
+  border: 10px solid;
+  height: 550px;
+  padding: 22.5% 10%; }
+  .logo-proyecto.pinterest-border {
+    border-color: #bd081b; }
+  .logo-proyecto.yape-border {
+    border-color: #00B19F;
+    padding: 20%; }
+    .logo-proyecto.yape-border img {
+      height: 150px;
+      width: auto; }
+  .logo-proyecto.pokedex-border {
+    border-color: #ee4037; }
+  .logo-proyecto.yummy-border {
+    border-color: #f4bd46;
+    padding-left: 15%; }
+
+.text-proyecto {
+  background-color: #292929;
+  position: absolute;
+  border: 5px solid #686369;
+  height: 400px;
+  padding: 10% 5%;
+  top: 15%;
+  font-size: 1.3rem;
+  font-weight: 300; }
+  .text-proyecto a.pinterest-color {
+    color: #bd081b; }
+  .text-proyecto a.yape-color {
+    color: #00B19F; }
+  .text-proyecto a.pokedex-color {
+    color: #ee4037; }
+  .text-proyecto a.yummy-color {
+    color: #f4bd46; }
+
+.contacto {
+  height: 650px;
+  border-bottom: 2px solid #686369;
+  padding-top: 10%; }
+  .contacto .row > div {
+    text-align: center; }
+    .contacto .row > div .text {
+      font-weight: 400;
+      font-size: 2.5rem;
+      margin: 10px 0; }
+      .contacto .row > div .text a {
+        color: #e0dcdd; }
+    .contacto .row > div > div {
+      margin-top: 5%; }
+  .contacto .row ul {
+    padding-top: 10%;
+    list-style: none; }
+    .contacto .row ul li {
+      display: inline-block;
+      padding: 0 4%;
+      font-size: 1.5rem;
+      font-weight: 500;
+      border-right: 2px solid #F4BD44; }
+      .contacto .row ul li:last-of-type {
+        border: 0; }
+      .contacto .row ul li a {
+        text-decoration: none;
+        color: #686369; }
+
+footer {
+  height: 50px;
+  text-align: center;
+  font-size: 1.3rem; }
+  footer .laboratoria {
+    text-decoration: none;
+    color: #F4BD44; }
+  footer .developer {
+    color: #365164;
+    text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

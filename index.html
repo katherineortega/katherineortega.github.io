@@ -9,107 +9,141 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<header class="container-fluid">
+<header class="container">
     <nav class="row">
         <div class="col-lg-1 col-lg-offset-1">
             <img class="img-responsive" src="assets/img/logo-kath.png" alt="">
         </div>
-        <div class="col-lg-5 col-lg-offset-4">
-            <ul>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Hablemos</a></li>
+        <div class="col-lg-5 col-lg-offset-5">
+            <ul class="row">
+                <li class="col-lg-3"><a href="#">Sobre mi</a></li>
+                <li class="col-lg-3"><a href="#">Portafolio</a></li>
+                <li class="col-lg-3"><a href="#">Hablemos</a></li>
             </ul>
         </div>
     </nav>
-    <div class="row">
+    <div class="row main-section">
         <p>Hola, soy</p>
-        <h1>Katherine<br>Ortega</h1>
-        <p>Frontend Developer Junior & Graphic Designer</p>
+        <h1>KATHERINE<br>ORTEGA</h1>
+        <p class="small-title">Frontend Developer Junior<br>& Graphic Designer</p>
     </div>
 </header>
-<section>
-    <div>
-        <h3>SOBRE MI</h3>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy JJKH wisi enim ad minim
-            veniam.</p>
-        <div>
-            <span></span>
-            <span>Curriculum Vitae</span>
+<section class="container about-section">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h3 class="subtitle">SOBRE MI</h3>
+            <hr>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy
+                JJKH wisi
+                enim ad minim
+                veniam.</p>
+            <div class="curriculum col-lg-4  col-lg-offset-4">
+                <span></span>
+                <span>CURRICULUM VITAE</span>
+            </div>
         </div>
     </div>
 </section>
-<section>
-    <div>
-        <h3>PORTAFOLIO</h3>
-        <hr>
-        <ul>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">Yape</a></li>
-            <li><a href="#">Pokédex</a></li>
-            <li><a href="#">Yummy!</a></li>
-        </ul>
-    </div>
-    <div>
-        <div>
-            <img src="assets/img/logo-pinterest.png" alt="">
-        </div>
-        <div>
-            <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto se utilizaron eventos de
-                Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
-            <p><a href="#">Conóce más del proyecto aquí</a></p>
+<section class="container portfolio">
+    <div class="row portfolio-section">
+        <div class=" col-lg-8 col-lg-offset-2">
+            <h3 class="subtitle">PORTAFOLIO</h3>
+            <hr>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam</p>
+            <ul>
+                <li class="text"><a href="#">Pinterest</a></li>
+                <li class="text"><a href="#">Yape</a></li>
+                <li class="text"><a href="#">Pokédex</a></li>
+                <li class="text"><a href="#">Yummy!</a></li>
+            </ul>
         </div>
     </div>
-    <div>
-        <div>
-            <img src="assets/img/logo-yape.png" alt="">
-        </div>
-        <div>
-            <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto se utilizaron eventos de
-                Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
-            <p><a href="#">Conóce más del proyecto aquí</a></p>
-        </div>
-    </div>
-    <div>
-        <div>
-            <img src="assets/img/logo-pokedex.png" alt="">
-        </div>
-        <div>
-            <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto se utilizaron eventos de
-                Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
-            <p><a href="#">Conóce más del proyecto aquí</a></p>
+    <div class="row project-section">
+        <div class="col-lg-10 col-lg-offset-1 position-relative">
+            <div class="col-lg-7 logo-proyecto pinterest-border">
+                <img class="img-responsive" src="assets/img/logo-pinterest.png" alt="">
+            </div>
+            <div class="col-lg-6 col-lg-offset-6 text-proyecto">
+                <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto
+                    se
+                    utilizaron eventos de
+                    Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
+                <p><a class="pinterest-color" href="#">Conóce más del proyecto aquí</a></p>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-            <img src="assets/img/logo-yummy.png" alt="">
+    <div class="row project-section">
+        <div class="col-lg-10 col-lg-offset-1 position-relative">
+            <div class="col-lg-7 col-lg-offset-5 logo-proyecto yape-border">
+                <img class="img-responsive" src="assets/img/logo-yape.png" alt="">
+            </div>
+            <div class="col-lg-6 text-proyecto">
+                <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto
+                    se
+                    utilizaron eventos de
+                    Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
+                <p><a class="yape-color" href="#">Conóce más del proyecto aquí</a></p>
+            </div>
         </div>
-        <div>
-            <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto se utilizaron eventos de
-                Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
-            <p><a href="#">Conóce más del proyecto aquí</a></p>
+    </div>
+    <div class="row project-section">
+        <div class="col-lg-10 col-lg-offset-1 position-relative">
+            <div class="col-lg-7 logo-proyecto pokedex-border">
+                <img class="img-responsive" src="assets/img/logo-pokedex.png" alt="">
+            </div>
+            <div class="col-lg-6 col-lg-offset-6 text-proyecto">
+                <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto
+                    se
+                    utilizaron eventos de
+                    Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
+                <p><a class="pokedex-color" href="#">Conóce más del proyecto aquí</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row project-section">
+        <div class="col-lg-10 col-lg-offset-1 position-relative">
+            <div class="col-lg-7 col-lg-offset-5 logo-proyecto yummy-border">
+                <img class="img-responsive" src="assets/img/logo-yummy.png" alt="">
+            </div>
+            <div class="col-lg-6 text-proyecto">
+                <p>Diseñada para personas que inician en el mundo de la cocina, para este proyecto
+                    se
+                    utilizaron eventos de
+                    Javascript que ayuden al usuario a interactuar con el cotenido de la página.</p>
+                <p><a class="yummy-color" href="#">Conóce más del proyecto aquí</a></p>
+            </div>
         </div>
     </div>
 </section>
-<section>
-    <div>
-        <h3>HABLEMOS</h3>
-        <hr>
-        <p>+51 - 992865356</p>
-        <p><a href="#">katherine.ortegaramos@gmail.com</a></p>
-        <span>GitHub</span>
-        <span>LinkedIn</span>
-        <ul>
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">SOBRE MI</a></li>
-            <li><a href="#">PORTAFOLIO</a></li>
-            <li><a href="#">HABLEMOS</a></li>
-        </ul>
+<section class="container contacto">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3 class="subtitle">HABLEMOS</h3>
+            <hr>
+            <div class="col-lg-12">
+                <p class="text">+51 - 992865356</p>
+                <p class="text"><a href="#">katherine.ortegaramos@gmail.com</a></p>
+                <span class="text">GitHub</span>
+                <span class="text">LinkedIn</span>
+            </div>
+            <div class="col-lg-12">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SOBRE MI</a></li>
+                    <li><a href="#">PORTAFOLIO</a></li>
+                    <li><a href="#">HABLEMOS</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 <footer>
-    <p>©2017 | Hecho con amor en <a href="#">Laboratoria</a> por <a href="#">Katherine Ortega</a>.</p>
+    <p>©2017 | Hecho con amor en <a href="#" class="laboratoria">Laboratoria</a> por <a
+            href="#" class="developer">Katherine
+        Ortega</a>.
+    </p>
 </footer>
 <script src="assets/js/app.js"></script>
 </body>
