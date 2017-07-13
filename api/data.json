@@ -1,0 +1,125 @@
+{
+  "data": {
+    "logo": "logo-kath.png",
+    "name": "Katherine Ortega",
+    "email": "katherine.ortegaramos@gmail.com",
+    "phone": "(+51) 992865356",
+    "github": "https://github.com/katherineortega",
+    "linkedin": "https://www.linkedin.com/in/katherinececiliaortegaramos/",
+    "laboratoria": "http://laboratoria.la/",
+    "portfolio": "https://katherineortega.github.io/",
+    "career": {
+      "one": "Frontend Developer Junior",
+      "two": "Diseñadora Gráfica"
+    },
+    "copyright": "©2017"
+  },
+  "data-projects": [
+    {
+      "pinterest": {
+        "name": "Pinterest",
+        "logo": "logo-pinterest.png",
+        "link": "",
+        "code": "https://github.com/RuthMeryCardenas/Proyecto-Pinterest"
+      },
+      "yape": {
+        "name": "Yape",
+        "logo": "logo-yape.png",
+        "link": "",
+        "code": "https://github.com/katherineortega/Yape"
+      },
+      "pokedex": {
+        "name": "Pokédex",
+        "logo": "logo-pokedex.png",
+        "link": "",
+        "code": "https://github.com/katherineortega/Leccion-42-Pokedex"
+      },
+      "yummy": {
+        "name": "Yummy!",
+        "logo": "logo-yummy.png",
+        "link": "",
+        "code": "https://github.com/naovillaj/Yummy"
+      }
+    }
+  ],
+  "es": {
+    "greeting": "Hola, soy",
+    "menu": {
+      "home": "Inicio",
+      "about": {
+        "title": "Sobre Mi",
+        "brief": ""
+      },
+      "portfolio": {
+        "title": "Portafolio",
+        "brief": ""
+      },
+      "contact": "Hablemos"
+    },
+    "main": {
+      "about": "",
+      "resume": "Curriculum Vitae"
+    },
+    "projects": [
+      {
+        "pinterest": {
+          "brief": ""
+        },
+        "yape": {
+          "brief": ""
+        },
+        "pokedex": {
+          "brief": ""
+        },
+        "yummy": {
+          "brief": "Diseñada para personas que inician en el mundo de la gastronomía, para este proyecto se utilizaron eventos de Javascript que ayuden al usuario a interactuar con el cotenido de la página."
+        }
+      }
+    ],
+    "more": "Conóce más del proyecto aquí",
+    "footer": {
+      "made": "Hecho con amor en ",
+      "by": " por "
+    }
+  },
+  "en": {
+    "greeting": "Hi, I'm",
+    "menu": {
+      "home": "Home",
+      "about": {
+        "title": "About Me",
+        "brief": ""
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "brief": ""
+      },
+      "contact": "Let's Talk"
+    },
+    "main": {
+      "about": "",
+      "resume": "Resume"
+    },
+    "projects": [
+      {
+        "pinterest": {
+          "brief": ""
+        },
+        "yape": {
+          "brief": ""
+        },
+        "pokedex": {
+          "brief": ""
+        },
+        "yummy": {
+          "brief": ""
+        }
+      }
+    ],
+    "more": "Know more about the project here",
+    "footer": {
+      "made": "Made with love ",
+      "by": " by "
+    }
+  }
+}
