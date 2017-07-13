@@ -60,18 +60,16 @@
     },
     "projects": [
       {
-        "pinterest": {
-          "brief": ""
-        },
-        "yape": {
-          "brief": ""
-        },
-        "pokedex": {
-          "brief": ""
-        },
-        "yummy": {
-          "brief": "Diseñada para personas que inician en el mundo de la gastronomía, para este proyecto se utilizaron eventos de Javascript que ayuden al usuario a interactuar con el cotenido de la página."
-        }
+        "brief": ""
+      },
+      {
+        "brief": ""
+      },
+      {
+        "brief": ""
+      },
+      {
+        "brief": ""
       }
     ],
     "more": "Conóce más del proyecto aquí",
@@ -100,18 +98,16 @@
     },
     "projects": [
       {
-        "pinterest": {
-          "brief": ""
-        },
-        "yape": {
-          "brief": ""
-        },
-        "pokedex": {
-          "brief": ""
-        },
-        "yummy": {
-          "brief": ""
-        }
+        "brief": ""
+      },
+      {
+        "brief": ""
+      },
+      {
+        "brief": ""
+      },
+      {
+        "brief": ""
       }
     ],
     "more": "Know more about the project here",
