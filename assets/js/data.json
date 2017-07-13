@@ -1,7 +1,8 @@
 {
   "data": {
     "logo": "logo-kath.png",
-    "name": "Katherine Ortega",
+    "name": "Katherine",
+    "lastName":"Ortega",
     "email": "katherine.ortegaramos@gmail.com",
     "phone": "(+51) 992865356",
     "github": "https://github.com/katherineortega",
@@ -10,7 +11,7 @@
     "portfolio": "https://katherineortega.github.io/",
     "career": {
       "one": "Frontend Developer Junior",
-      "two": "Diseñadora Gráfica"
+      "two": "Graphic Designer"
     },
     "copyright": "©2017",
     "projects": [
@@ -40,7 +41,7 @@
       }
     ]
   },
-  "es": {
+  "spanish": {
     "greeting": "Hola, soy",
     "menu": {
       "home": "Inicio",
@@ -78,7 +79,7 @@
       "by": " por "
     }
   },
-  "en": {
+  "english": {
     "greeting": "Hi, I'm",
     "menu": {
       "home": "Home",

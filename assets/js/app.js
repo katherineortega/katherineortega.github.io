@@ -5,21 +5,22 @@ const render = (root) => {
     const wrapper = $('<div class="wrapper"></div>');
 
     wrapper.append(Header());
+    wrapper.append(About());
+    wrapper.append(Contact());
+    wrapper.append(Footer());
 
     root.append(wrapper);
 };
 
 const state = {
     data: null,
-    es: null,
-    en: null
+    language: null
 };
 
 $(_ => {
     $.getJSON('assets/js/data.json', (res) => {
         state.data = res.data;
-        state.es = res.es;
-        state.en = res.en;
+        state.language = res.spanish;
 
         const root = $('.root');
         render(root);
