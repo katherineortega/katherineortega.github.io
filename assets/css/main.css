@@ -985,6 +985,8 @@ hr {
       margin: 10px 0; }
       .contacto .row > div .text a {
         color: #e0dcdd; }
+      .contacto .row > div .text.link a {
+        text-decoration: none; }
     .contacto .row > div > div {
       margin-top: 5%; }
   .contacto .row ul {

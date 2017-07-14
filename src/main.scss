@@ -47,7 +47,8 @@ $yape: #00B19F;
 @mixin border-bottom() {
   border-bottom: 2px solid $grey;
 }
-@mixin height($height){
+
+@mixin height($height) {
   height: $height;
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 .row,
-.container{
+.container {
   @include box-sizing(border-box);
 }
 
@@ -184,11 +185,11 @@ hr {
   }
 }
 
-.portfolio{
+.portfolio {
   @include border-bottom;
 }
 
-.project-section{
+.project-section {
   @include height(800px);
   padding: 11% 0;
 }
@@ -261,39 +262,44 @@ hr {
   }
 }
 
-.contacto{
+.contacto {
   @include height(650px);
   @include border-bottom;
   padding-top: 10%;
-  .row{
-    & > div{
+  .row {
+    & > div {
       text-align: center;
-      .text{
+      .text {
         font-weight: 400;
         font-size: 2.5rem;
         margin: 10px 0;
-        a{
+        a {
           color: $lighten-grey;
+        }
+        &.link {
+          a {
+            text-decoration: none;
+          }
         }
       }
 
-      & > div{
+      & > div {
         margin-top: 5%;
       }
     }
-    ul{
+    ul {
       padding-top: 10%;
       list-style: none;
-      li{
+      li {
         display: inline-block;
         padding: 0 4%;
         font-size: 1.5rem;
         font-weight: 500;
         border-right: 2px solid $yellow;
-        &:last-of-type{
+        &:last-of-type {
           border: 0;
         }
-        a{
+        a {
           text-decoration: none;
           color: $grey;
         }
@@ -302,15 +308,15 @@ hr {
   }
 }
 
-footer{
+footer {
   @include height(50px);
   text-align: center;
   font-size: 1.3rem;
-  .laboratoria{
+  .laboratoria {
     text-decoration: none;
     color: $yellow;
   }
-  .developer{
+  .developer {
     color: $darken-blue;
     text-decoration: none;
   }

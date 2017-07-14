@@ -16,25 +16,25 @@
     "copyright": "©2017",
     "projects": [
       {
-        "name": "Pinterest",
+        "name": "pinterest",
         "logo": "logo-pinterest.png",
         "link": "",
         "code": "https://github.com/RuthMeryCardenas/Proyecto-Pinterest"
       },
       {
-        "name": "Yape",
+        "name": "yape",
         "logo": "logo-yape.png",
         "link": "",
         "code": "https://github.com/katherineortega/Yape"
       },
       {
-        "name": "Pokédex",
+        "name": "pokedex",
         "logo": "logo-pokedex.png",
         "link": "",
         "code": "https://github.com/katherineortega/Leccion-42-Pokedex"
       },
       {
-        "name": "Yummy!",
+        "name": "yummy",
         "logo": "logo-yummy.png",
         "link": "",
         "code": "https://github.com/naovillaj/Yummy"

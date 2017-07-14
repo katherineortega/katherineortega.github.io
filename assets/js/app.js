@@ -6,6 +6,7 @@ const render = (root) => {
 
     wrapper.append(Header());
     wrapper.append(About());
+    wrapper.append(Portfolio());
     wrapper.append(Contact());
     wrapper.append(Footer());
 
