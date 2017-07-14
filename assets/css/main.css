@@ -843,7 +843,7 @@ div[class*='col-'] {
 
 header {
   border-bottom: 2px solid #686369;
-  height: 800px; }
+  height: 850px; }
 
 nav {
   padding-top: 2%;
@@ -912,7 +912,7 @@ hr {
 
 .about-section {
   border-bottom: 2px solid #686369;
-  height: 800px;
+  height: 850px;
   padding-top: 15%; }
   .about-section .row > div {
     text-align: center; }
@@ -921,12 +921,12 @@ hr {
   border-bottom: 2px solid #686369; }
 
 .project-section {
-  height: 800px;
-  padding: 11% 0; }
+  height: 850px;
+  padding: 13% 0; }
 
 .portfolio-section {
   border-bottom: 2px solid #686369;
-  height: 800px;
+  height: 850px;
   padding-top: 10%;
   text-align: center; }
   .portfolio-section ul {
@@ -974,9 +974,9 @@ hr {
     color: #f4bd46; }
 
 .contacto {
-  height: 650px;
+  height: 750px;
   border-bottom: 2px solid #686369;
-  padding-top: 10%; }
+  padding-top: 14%; }
   .contacto .row > div {
     text-align: center; }
     .contacto .row > div .text {

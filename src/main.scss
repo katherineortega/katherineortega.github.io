@@ -89,7 +89,7 @@ div[class*='col-'] {
 
 header {
   @include border-bottom;
-  @include height(800px);
+  @include height(850px);
 }
 
 nav {
@@ -176,7 +176,7 @@ hr {
 
 .about-section {
   @include border-bottom;
-  @include height(800px);
+  @include height(850px);
   padding-top: 15%;
   .row {
     & > div {
@@ -190,13 +190,13 @@ hr {
 }
 
 .project-section {
-  @include height(800px);
-  padding: 11% 0;
+  @include height(850px);
+  padding: 13% 0;
 }
 
 .portfolio-section {
   @include border-bottom;
-  @include height(800px);
+  @include height(850px);
   padding-top: 10%;
   text-align: center;
 
@@ -263,9 +263,9 @@ hr {
 }
 
 .contacto {
-  @include height(650px);
+  @include height(750px);
   @include border-bottom;
-  padding-top: 10%;
+  padding-top: 14%;
   .row {
     & > div {
       text-align: center;

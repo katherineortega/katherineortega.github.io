@@ -15,17 +15,28 @@ const Portfolio = () => {
     const project3 = $('<li class="text"><a href="#">Pokédex</a></li>');
     const project4 = $('<li class="text"><a href="#">Yummy!</a></li>');
 
-    state.data.projects.forEach((data,index) => {
+    ul.append(project1);
+    ul.append(project2);
+    ul.append(project3);
+    ul.append(project4);
+    divPortfolio.append(subtitle);
+    divPortfolio.append(hr);
+    divPortfolio.append(text);
+    divPortfolio.append(ul);
+    portfolio.append(divPortfolio);
+    container.append(portfolio);
+
+    state.data.projects.forEach((data, index) => {
         const project = $('<div class="row project-section"></div>');
         const divProject = $('<div class="col-lg-10 col-lg-offset-1 position-relative"></div>');
-        const divLogo = $('<div class="col-lg-7 logo-proyecto '+data.name+'-border"></div>');
-        const logo = $('<img class="img-responsive" src="assets/img/'+data.logo+'" alt="'+data.name+'">');
+        const divLogo = $('<div class="col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
+        const logo = $('<img class="img-responsive" src="assets/img/' + data.logo + '" alt="' + data.name + '">');
         const divBrief = $('<div class="col-lg-6 col-lg-offset-6 text-proyecto"></div>');
-        const brief = $('<p>'+state.language.projects[index].brief+'</p>');
+        const brief = $('<p>' + state.language.projects[index].brief + '</p>');
         const divLink = $('<p></p>');
-        const link = $('<a class="'+data.name+'-color" href="#">'+state.language.more+'</a>');
+        const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + '</a>');
 
-        if(index == 1 || index == 3){
+        if (index == 1 || index == 3) {
             divLogo.addClass('col-lg-offset-5');
             divBrief.removeClass('col-lg-offset-6');
         }
@@ -39,23 +50,8 @@ const Portfolio = () => {
         project.append(divProject);
 
         container.append(project);
-
-        console.log(data);
-        console.log(index);
     });
 
-
-    ul.append(project1);
-    ul.append(project2);
-    ul.append(project3);
-    ul.append(project4);
-    divPortfolio.append(subtitle);
-    divPortfolio.append(hr);
-    divPortfolio.append(text);
-    divPortfolio.append(ul);
-    portfolio.append(divPortfolio);
-
-    container.append(portfolio);
 
     return container;
 };
