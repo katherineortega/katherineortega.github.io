@@ -325,9 +325,16 @@ footer {
 /************************************************/
 /************************************************/
 
-html, body {
+html, body, .root, .wrapper {
   height: 100%;
   overflow: hidden;
+}
+
+//Loader
+.btn{
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
 }
 
 
@@ -367,7 +374,7 @@ html, body {
 }
 
 .hide-button{
-  display: none;
+  opacity: .5;
 }
 
 .show-page {
@@ -377,6 +384,10 @@ html, body {
 
 .pt-page-ontop{
   z-index: 9999;
+}
+
+.pt-page-0{
+  background: white;
 }
 
 .pt-page-1 {

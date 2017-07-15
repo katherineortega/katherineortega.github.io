@@ -1017,9 +1017,14 @@ footer {
 
 /************************************************/
 /************************************************/
-html, body {
+html, body, .root, .wrapper {
   height: 100%;
   overflow: hidden; }
+
+.btn {
+  position: absolute;
+  bottom: 10%;
+  left: 45%; }
 
 .navegadores {
   position: fixed;
@@ -1054,7 +1059,7 @@ html, body {
   transform-style: preserve-3d; }
 
 .hide-button {
-  display: none; }
+  opacity: .5; }
 
 .show-page {
   visibility: visible;
@@ -1062,6 +1067,9 @@ html, body {
 
 .pt-page-ontop {
   z-index: 9999; }
+
+.pt-page-0 {
+  background: white; }
 
 .pt-page-1 {
   background: #0ac2d2; }

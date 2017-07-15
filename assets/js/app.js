@@ -1,110 +1,26 @@
-/*
- 'use strict';
+'use strict';
 
- const render = (root) => {
- root.empty();
- const wrapper = $('<div class="wrapper"></div>');
+const render = (root) => {
+    root.empty();
+    const wrapper = $('<div class="wrapper"></div>');
 
- wrapper.append(Header());
- wrapper.append(About());
- wrapper.append(Portfolio());
- wrapper.append(Contact());
- wrapper.append(Footer());
+    wrapper.append(Loader(wrapper));
 
- root.append(wrapper);
- };
+    root.append(wrapper);
+};
 
- const state = {
- data: null,
- language: null
- };
-
- $(_ => {
- $.getJSON('assets/js/data.json', (res) => {
- state.data = res.data;
- state.language = res.spanish;
-
- const root = $('.root');
- render(root);
- });
- });*/
-
+const state = {
+    data: null,
+    language: null
+};
 
 $(_ => {
-    $('.pt-page-1').addClass(' show-page');
+    $.getJSON('assets/js/data.json', (res) => {
+        state.data = res.data;
+        state.language = res.spanish;
 
-    /*$('.right').on('click', () => {
-     $('.pt-page-2').addClass(' pt-page-moveToRight');
-     $('.pt-page-2').removeClass('pt-page-moveFromRight');
-     });
-     $('.left').on('click', () => {
-     $('.pt-page-2').removeClass('pt-page-moveToRight');
-     $('.pt-page-2').addClass('show-page pt-page-moveFromRight');
-     });*/
-    let countPage = 1,
-        outClass = '',
-        inClass = '';
-
-    const classes = (type) => {
-        switch (type) {
-            case 1:
-                outClass = 'pt-page-moveToLeftEasing pt-page-ontop';
-                inClass = 'pt-page-moveFromRight';
-                break;
-            case 2:
-                outClass = 'pt-page-moveToRightEasing pt-page-ontop';
-                inClass = 'pt-page-moveFromLeft';
-                break;
-            case 3:
-                outClass = 'pt-page-moveToTopEasing pt-page-ontop';
-                inClass = 'pt-page-moveFromBottom';
-                break;
-            case 4:
-                outClass = 'pt-page-moveToBottomEasing pt-page-ontop';
-                inClass = 'pt-page-moveFromTop';
-                break;
-        }
-    };
-
-    $('.down').on('click', () => {
-
-        if (countPage < 8) {
-            $('.down').removeClass('hide-button');
-            $('.up').removeClass('hide-button');
-
-            console.log(countPage);
-            let nextPage = countPage + 1;
-
-            $('.pt-page-' + countPage + '').addClass('show-page pt-page-moveToTopEasing');
-            $('.pt-page-' + countPage + '').removeClass('pt-page-moveToBottomEasing');
-            $('.pt-page-' + nextPage + '').addClass('show-page pt-page-moveFromBottom');
-            $('.pt-page-' + nextPage + '').removeClass('pt-page-moveFromTop');
-
-            countPage = nextPage;
-
-        } else {
-            $('.down').addClass('hide-button');
-        }
-
-    });
-
-    $('.up').on('click', () => {
-
-        console.log(countPage);
-        if (countPage > 1) {
-            $('.up').removeClass('hide-button');
-            $('.down').removeClass('hide-button');
-
-            let prevPage = countPage - 1;
-
-            $('.pt-page-' + prevPage + '').removeClass('pt-page-moveFromBottom');
-            $('.pt-page-' + prevPage + '').addClass('show-page pt-page-moveFromTop');
-            $('.pt-page-' + countPage + '').removeClass('pt-page-moveToTopEasing');
-            $('.pt-page-' + countPage + '').addClass('show-page pt-page-moveToBottomEasing');
-
-            countPage = prevPage;
-        } else {
-            $('.up').addClass('hide-button');
-        }
+        const root = $('.root');
+        render(root);
     });
 });
+
