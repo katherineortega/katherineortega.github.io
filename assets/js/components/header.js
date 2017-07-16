@@ -38,11 +38,6 @@ const Header = () => {
      nav.append(divLogo);
      nav.append(divMenu);
 
-
-     section.append(pGreeting);
-     section.append(h1Name);
-     section.append(pCareer);
-
      container.append(nav);
      container.append(section);
 
