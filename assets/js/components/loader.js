@@ -34,7 +34,7 @@ const Loader = (wrapper) => {
 
         setTimeout(() => {
             parent.append(container);
-            parent.append(Navigator());
+            parent.append(Navigator(wrapper));
             loader.removeClass('show-page');
         }, 2000);
     };

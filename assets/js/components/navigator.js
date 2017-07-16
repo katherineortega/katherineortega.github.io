@@ -9,8 +9,15 @@
  inClass = ' pt-page-moveFromLeft ';
  break;*/
 
-const Navigator = () => {
+const Navigator = (wrapper) => {
     const container = $('<div class="navegadores"></div>');
+
+    //logo
+    const divLogo = $('<div class="main-logo"></div>');
+    const logo = $('<a href="' + state.data.portfolio + '"><img src="assets/img/' + state.data.logo + '"/></a>');
+
+    divLogo.append(logo);
+
     //Buttons
     const up = $('<span class="up icon icon-up-arrow"></span>');
     const down = $('<span class="down icon icon-down-arrow"></span>');
@@ -92,5 +99,6 @@ const Navigator = () => {
         }
     });
 
-    return container;
+    wrapper.append(divLogo);
+    wrapper.append(container);
 };

@@ -1,36 +1,25 @@
 'use strict';
 
 const Contact = () => {
-    //JSON data
-    const menu = state.language.menu;
-
-    const container = $('<section id="8" class="container pt-page-8" data-page="8"></section>');
-
+    const container = $('<section id="8" class="container container--contact"' +
+        ' data-page="8"></section>');
     const row = $('<div class="row"></div>');
 
-    const divContact = $('<div class="col-lg-10 col-lg-offset-1"></div>');
-    const subTitle = $('<h3 class="subtitle">' + menu.contact + '</h3>');
-    const hr = $('<hr>');
+    const colTitle = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
+    const title = $('<h1 class="title">' + state.language.menu.contact + '</h1>');
+    //const hr = $('<hr>');
 
-    const contact = $('<div class="col-lg-12"></div>');
+    const colText = $('<div class="col-xs-12 col-lg-5"></div>');
     const number = $('<p class="text">' + state.data.phone + '</p>');
     const email = $('<p class="text"><a href="#" target="_blank">' + state.data.email + '</a></p>');
     const github = $('<span class="text link"><a href="' + state.data.github + '" target="_blank">GitHub</a></span>');
     const linkedin = $('<span class="text link"><a href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></span>');
 
 
-    contact.append(number);
-    contact.append(email);
-    contact.append(github);
-    contact.append(linkedin);
-
-
-    divContact.append(subTitle);
-    divContact.append(hr);
-    divContact.append(contact);
-
-    row.append(divContact);
-    container.append(row);
+    colText.append(number);
+    colText.append(email);
+    colText.append(github);
+    colText.append(linkedin);
 
 
     const footer = $('<footer></footer>');
@@ -40,7 +29,12 @@ const Contact = () => {
 
     footer.append(p);
 
-    container.append(footer);
+    colTitle.append(title);
+    //colTitle.append(hr);
+    row.append(colTitle);
+    row.append(colText);
+    row.append(footer);
+    container.append(row);
 
     return container;
 };
