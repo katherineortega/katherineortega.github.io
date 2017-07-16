@@ -96,9 +96,12 @@ body {
 
   &--loader {
     background: $white;
+    color: lighten( $grey, 30%);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -109,6 +112,13 @@ body {
 
 .page-ontop {
   z-index: 9999;
+}
+//navegadores
+.navegadores {
+  position: fixed;
+  z-index: 9999;
+  bottom: 5%;
+  left: 45%;
 }
 
 //Loader
@@ -123,6 +133,7 @@ body {
 
   /* title */
   &--title {
+    text-transform: uppercase;
     font-weight: 800;
     color: $grey;
     -webkit-transition: color 0.5s 0.25s;
@@ -166,7 +177,7 @@ body {
 
       &::before {
         content: attr(data-letters);
-        color: red;
+        color: $darken-blue;
         position: absolute;
         left: 0;
         width: 100%;
@@ -203,17 +214,11 @@ body {
   }
 }
 
-.navegadores {
-  position: fixed;
-  z-index: 9999;
-  bottom: 5%;
-  left: 45%;
-}
-
 .btn {
-  position: absolute;
-  bottom: 10%;
-  left: 45%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .hide-button {

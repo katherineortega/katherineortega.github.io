@@ -24,9 +24,7 @@ const Header = () => {
      const contact = $('<a href="#">'+ menu.contact +'</a>');
 
 
-     const pGreeting = $('<p>'+state.language.greeting+'</p>');
-     const h1Name = $('<h1>'+state.data.name+'<br>'+state.data.lastName+'</h1>');
-     const pCareer = $('<p class="small-title">'+state.data.career.one+ '<br> & ' + state.data.career.two+ '</p>');
+
 
      divLogo.append(imgLogo);
      divAbout.append(about);
