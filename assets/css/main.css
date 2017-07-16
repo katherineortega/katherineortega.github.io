@@ -1173,7 +1173,9 @@ hr {
 .logo-proyecto {
   border: 10px solid;
   height: 550px;
-  padding: 22.5% 10%; }
+  padding: 0 13% 0 7%;
+  display: flex;
+  align-items: center; }
   .logo-proyecto.pinterest-border {
     border-color: #bd081b; }
   .logo-proyecto.yape-border {
