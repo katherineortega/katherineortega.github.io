@@ -1,32 +1,45 @@
 'use strict';
 
 const About = () => {
-
+    //JSON data
     const menu = state.language.menu;
 
-    const container = $('<section id="2" class="container pt-page-2" data-page="2"></section>');
+    //Container General
+    const container = $('<header id="1" class="container pt-page-1" data-page="1"></header>');
 
-    const row = $('<div class="row"></div>');
-    const divAbout = $('<div class="col-lg-8 col-lg-offset-2"></div>');
+     const nav = $('<nav class="row"></nav>');
+     const section = $('<div class="row main-section"></div>');
 
-    const subTitle = $('<h3 class="subtitle">' + menu.about.title + '</h3>');
-    const hr = $('<hr>');
-    const text = ('<p class="text">' + menu.about.brief + '</p>');
+     //Nav
+     const divLogo = $('<div class="col-lg-1 col-lg-offset-1"></div>');
+     const imgLogo = $('<img class="img-responsive" src="assets/img/logo-kath.png"' +
+     ' alt="Katherine Ortega"/>');
+     const divMenu = $('<div class="col-lg-5 col-lg-offset-5"></div>');
+     const ulMenu = $('<ul class="row"></ul>');
+     const divAbout = $('<li class="col-lg-3"></li>');
+     const about = $('<a href="#">'+ menu.about.title +'</a>');
+     const divPortfolio = $('<li class="col-lg-3"></li>');
+     const portfolio = $('<a href="#">'+ menu.portfolio.title +'</a>');
+     const divContact = $('<li class="col-lg-3"></li>');
+     const contact = $('<a href="#">'+ menu.contact +'</a>');
 
-    const divResume = $('<div class="curriculum col-lg-4  col-lg-offset-4"></div>');
-    const iconResume = $('<span></span>');
-    const resume = $('<span>' + state.language.main.resume + '</span>');
 
-    divResume.append(iconResume);
-    divResume.append(resume);
 
-    divAbout.append(subTitle);
-    divAbout.append(hr);
-    divAbout.append(text);
-    divAbout.append(divResume);
 
-    row.append(divAbout);
-    container.append(row);
+     divLogo.append(imgLogo);
+     divAbout.append(about);
+     ulMenu.append(divAbout);
+     divPortfolio.append(portfolio);
+     ulMenu.append(divPortfolio);
+     divContact.append(contact);
+     ulMenu.append(divContact);
+     divMenu.append(ulMenu);
+
+     nav.append(divLogo);
+     nav.append(divMenu);
+
+     container.append(nav);
+     container.append(section);
 
     return container;
 };

@@ -4,12 +4,12 @@ const Loader = (wrapper) => {
     //Loader
     const loader = $('<div class="container container--loader show-page"></div>');
 
-    const pGreeting = $('<p>'+state.language.greeting+'</p>');
-    const h1Name = $('<h1>'+state.data.name+'<br>'+state.data.lastName+'</h1>');
+    const pGreeting = $('<p>' + state.english.greeting + '</p>');
+    const h1Name = $('<h1>' + state.data.name + '<br>' + state.data.lastName + '</h1>');
     const profile = $('<div class="">');
-    const textName = $('<a class="link link--title" href="#">'+state.data.name+' '+state.data.lastName + '<span' +
-        ' data-letters="'+state.data.name+' '+state.data.lastName + '"></span><span data-letters="'+state.data.name+' '+state.data.lastName + '"></span></a>');
-    const pCareer = $('<p>'+state.data.career.one+ ' & ' + state.data.career.two+ '</p>');
+    const textName = $('<a class="link link--title" href="#">' + state.data.name + ' ' + state.data.lastName + '<span' +
+        ' data-letters="' + state.data.name + ' ' + state.data.lastName + '"></span><span data-letters="' + state.data.name + ' ' + state.data.lastName + '"></span></a>');
+    const pCareer = $('<p>' + state.data.career.one + ' & ' + state.data.career.two + '</p>');
 
     profile.append(pGreeting);
     profile.append(textName);
@@ -25,21 +25,34 @@ const Loader = (wrapper) => {
 
     //Pages
     const container = $('<div class="perspective"></div>');
-
-    //Events
-    spanish.on('click', () => {
-        container.append(Header().addClass('show-page'));
-        container.append(About());
+    const content = (parent) => {
+        container.append(About().addClass('show-page'));
+        container.append(Skills());
         container.append(Portfolio());
         projects(container);
         container.append(Contact());
 
-
         setTimeout(() => {
+            parent.append(container);
+            parent.append(Navigator());
             loader.removeClass('show-page');
-            wrapper.append(container);
-            wrapper.append(Navigator());
-        }, 0);
+        }, 2000);
+    };
+
+    //Events
+    spanish.on('click', () => {
+        state.language = state.spanish;
+        setTimeout(() => {
+            loader.addClass('page-moveToLeftEasing page-ontop');
+        }, 1300);
+        content(wrapper);
+    });
+    english.on('click', () => {
+        setTimeout(() => {
+            loader.addClass('page-moveToLeftEasing page-ontop');
+        }, 1300);
+        state.language = state.english;
+        content(wrapper);
     });
 
     return loader;

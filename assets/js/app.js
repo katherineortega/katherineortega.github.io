@@ -11,13 +11,16 @@ const render = (root) => {
 
 const state = {
     data: null,
+    english: null,
+    spanish: null,
     language: null
 };
 
 $(_ => {
     $.getJSON('assets/js/data.json', (res) => {
         state.data = res.data;
-        state.language = res.english;
+        state.spanish = res.spanish;
+        state.english = res.english;
 
         const root = $('.root');
         render(root);
