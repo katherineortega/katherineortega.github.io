@@ -41,8 +41,7 @@ const Navigator = () => {
 
     up.attr('disabled', 'disabled');
 
-    counter = 0;
-    page = counter;
+    counter = 1;
 
     down.on('click', () => {
         //Clean Class
@@ -51,43 +50,44 @@ const Navigator = () => {
         $('#' + nextPage + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
 
 
-        console.log(page);
-        if (page !== 7) {
+        if (counter !== 8) {
             up.removeAttr('disabled');
             page = $('#' + counter + '').data('page');
             nextPage = page + 1;
+            console.log(nextPage);
 
             $('#' + page + '').addClass(show + downOutClass);
             $('#' + nextPage + '').addClass(show + downInClass);
+            counter++;
 
-        } else {
-            down.attr('disabled', 'disabled');
-            $('#8').addClass(show);
         }
-        counter++;
+        else {
+            $('#8').addClass(show);
+            down.attr('disabled', 'disabled');
+        }
     });
 
     up.on('click', () => {
-        console.log(page);
 
         $('#' + (prevPage) + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
         $('#' + page + '').removeClass(show + downOutClass + downInClass + upInClass + upOutClass);
         $('#' + nextPage + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
 
-        if (page !== 2) {
+        if (counter !== 1) {
             down.removeAttr('disabled');
             page = $('#' + counter + '').data('page');
             prevPage = page - 1;
+            console.log(prevPage);
 
             $('#' + page + '').addClass(show + upOutClass);
             $('#' + prevPage + '').addClass(show + upInClass);
 
+            counter--;
         } else {
             up.attr('disabled', 'disabled');
             $('#1').addClass(show);
         }
 
-        counter--;
     });
 
 
