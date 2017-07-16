@@ -991,6 +991,9 @@ body {
     height: 100%;
     display: flex;
     align-items: center; }
+  .container--project {
+    display: flex;
+    align-items: center; }
 
 .show-page {
   visibility: visible;
@@ -1179,7 +1182,7 @@ hr {
   border: 5px solid #686369;
   height: 400px;
   padding: 10% 5%;
-  top: 15%;
+  top: 13%;
   font-size: 1.3rem;
   font-weight: 300; }
   .text-proyecto a.pinterest-color {

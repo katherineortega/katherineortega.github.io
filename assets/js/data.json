@@ -17,25 +17,21 @@
     "projects": [
       {
         "name": "pinterest",
-        "logo": "logo-pinterest.png",
         "link": "",
         "code": "https://github.com/RuthMeryCardenas/Proyecto-Pinterest"
       },
       {
         "name": "yape",
-        "logo": "logo-yape.png",
         "link": "",
         "code": "https://github.com/katherineortega/Yape"
       },
       {
         "name": "pokedex",
-        "logo": "logo-pokedex.png",
         "link": "",
         "code": "https://github.com/katherineortega/Leccion-42-Pokedex"
       },
       {
         "name": "yummy",
-        "logo": "logo-yummy.png",
         "link": "",
         "code": "https://github.com/naovillaj/Yummy"
       }
@@ -65,15 +61,19 @@
     },
     "projects": [
       {
+        "logo": "logo-pinterest.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-yape.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-pokedex.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-yummy.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],
@@ -107,15 +107,19 @@
     },
     "projects": [
       {
+        "logo": "logo-pinterest-color.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-yape-color.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-pokedex-color.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
+        "logo": "logo-yummy-color.png",
         "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],

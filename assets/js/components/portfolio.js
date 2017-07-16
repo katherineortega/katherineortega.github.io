@@ -30,11 +30,12 @@ const projects = (container) => {
     state.data.projects.forEach((data, index) => {
 
         let i = index + 4;
-        const project = $('<section id="' + i + '" class="container pt-page-' + i + '" data-page="' + i + '"></section>');
+        const project = $('<section id="' + i + '" class="container container--project"' +
+            ' data-page="' + i + '"></section>');
 
-        const divProject = $('<div class="col-lg-10 col-lg-offset-1 position-relative"></div>');
+        const divProject = $('<div class="col-lg-10 col-lg-offset-1"></div>');
         const divLogo = $('<div class="col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
-        const logo = $('<img class="img-responsive" src="assets/img/' + data.logo + '" alt="' + data.name + '">');
+        const logo = $('<img class="img-responsive" src="assets/img/' + state.language.projects[index].logo + '" alt="' + data.name + '">');
         const divBrief = $('<div class="col-lg-6 col-lg-offset-6 text-proyecto"></div>');
         const brief = $('<p>' + state.language.projects[index].brief + '</p>');
         const divLink = $('<p></p>');

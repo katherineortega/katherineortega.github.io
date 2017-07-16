@@ -108,6 +108,11 @@ body {
     display: flex;
     align-items: center;
   }
+
+  &--project {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .show-page {
@@ -347,7 +352,7 @@ hr {
   border: 5px solid $grey;
   height: 400px;
   padding: 10% 5%;
-  top: 15%;
+  top: 13%;
   font-size: 1.3rem;
   font-weight: 300;
 
