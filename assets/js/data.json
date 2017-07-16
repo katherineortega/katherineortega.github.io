@@ -49,6 +49,10 @@
         "title": "Sobre Mi",
         "brief": ""
       },
+      "skills": {
+        "title": "Habilidades",
+        "brief" : ""
+      },
       "portfolio": {
         "title": "Portafolio",
         "brief": ""
@@ -87,8 +91,12 @@
         "title": "About Me",
         "brief": ""
       },
+      "skills": {
+        "title": "Skills",
+        "brief" : ""
+      },
       "portfolio": {
-        "title": "Portfolio",
+        "title": " Port folio",
         "brief": ""
       },
       "contact": "Let's Talk"

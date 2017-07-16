@@ -987,6 +987,10 @@ body {
     align-items: center;
     font-size: 2rem;
     text-align: center; }
+  .container .row {
+    height: 100%;
+    display: flex;
+    align-items: center; }
 
 .show-page {
   visibility: visible;
@@ -1118,14 +1122,14 @@ div[class*='col-'] {
   width: 100%;
   height: auto; }
 
-.subtitle {
-  color: #F4BD44;
-  font-size: 3rem;
-  font-weight: 500;
-  margin: 10px 0; }
+.title {
+  font-size: 7rem;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  text-align: right; }
 
 hr {
-  width: 70px;
+  width: 100%;
   height: 7px;
   background-color: #686369;
   border: 0; }

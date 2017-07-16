@@ -1,20 +1,22 @@
 'use strict';
 
 const Portfolio = () => {
-    const container = $('<section id="3" class="container pt-page-3"  data-page="3"></section>');
+    const container = $('<section id="3" class="container container--portfolio"' +
+        '  data-page="3"></section>');
+    const row = $('<div class="row"></div>');
 
-    //Main Section
-    const portfolio = $('<div class="row portfolio-section"></div>');
-    const divPortfolio = $('<div class=" col-lg-8 col-lg-offset-2"></div>');
-    const subtitle = $('<h3 class="subtitle">PORTAFOLIO</h3>');
-    const hr = $('<hr>');
-    const text = $('<p class="text">lorem</p>');
+    const colTitle = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
+    const title = $('<h1 class="title">' + state.language.menu.portfolio.title + '</h1>');
+    //const hr = $('<hr>');
 
-    divPortfolio.append(subtitle);
-    divPortfolio.append(hr);
-    divPortfolio.append(text);
-    portfolio.append(divPortfolio);
-    container.append(portfolio);
+    const colText = $('<div class="col-xs-12 col-lg-5"></div>');
+    const text = $('<p>' + state.language.menu.portfolio.brief + '</p>');
+
+    colTitle.append(title);
+    //colTitle.append(hr);
+    row.append(colTitle);
+    row.append(colText);
+    container.append(row);
 
 
     return container;
