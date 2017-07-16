@@ -27,7 +27,7 @@ const Loader = (wrapper) => {
             loader.removeClass('show-page');
             wrapper.append(container);
             wrapper.append(Navigator());
-        }, 2000);
+        }, 0);
     });
 
     return loader;

@@ -5,7 +5,7 @@ const Header = () => {
     /*const menu = state.language.menu;*/
 
     //Container General
-    const container = $('<header class="page pt-page-1" data-page="1"></header>');
+    const container = $('<header id="1" class="page pt-page-1" data-page="1"></header>');
     const h1 = $('<h1>Page 1</h1>');
     container.append(h1);
 

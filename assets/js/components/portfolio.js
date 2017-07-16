@@ -1,7 +1,7 @@
 'use strict';
 
 const Portfolio = () => {
-    const container = $('<section class="page pt-page-3"  data-page="3"></section>');
+    const container = $('<section id="3" class="page pt-page-3"  data-page="3"></section>');
     const h1 = $('<h1>Page 3</h1>');
     container.append(h1);
 
@@ -43,7 +43,7 @@ const projects = ( container ) => {
     state.data.projects.forEach((data, index) => {
 
         let i = index + 4;
-        const project = $('<section class="page pt-page-' + i + '" data-page="'+i+'"></section>');
+        const project = $('<section id="'+i+'" class="page pt-page-' + i + '" data-page="'+i+'"></section>');
         const h1 = $('<h1>Page ' + i + '</h1>');
         project.append(h1);
         /*const project = $('<section class="row project-section"></section>');

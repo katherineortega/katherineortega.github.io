@@ -4,7 +4,7 @@ const Contact = () => {
     //JSON data
     /*const menu = state.language.menu;*/
 
-    const container = $('<section class="page pt-page-8" data-page="8"></section>');
+    const container = $('<section id="8" class="page pt-page-8" data-page="8"></section>');
     const h1 = $('<h1>Page 8</h1>');
     container.append(h1);
 

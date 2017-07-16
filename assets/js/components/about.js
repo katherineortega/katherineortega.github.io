@@ -4,7 +4,7 @@ const About = () => {
 
     /*const menu = state.language.menu;*/
 
-    const container = $('<section class="page pt-page-2" data-page="2"></section>');
+    const container = $('<section id="2" class="page pt-page-2" data-page="2"></section>');
     const h1 = $('<h1>Page 2</h1>');
     container.append(h1);
 
