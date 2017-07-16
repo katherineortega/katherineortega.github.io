@@ -1,3 +1,4 @@
+@import "icon";
 @import "grid";
 @import "translation";
 //Fuente Tipográfica
@@ -206,7 +207,6 @@ hr {
 }
 
 .contacto {
-  @include height(750px);
   padding-top: 14%;
   .row {
     & > div {
@@ -251,7 +251,6 @@ hr {
 }
 
 footer {
-  @include height(50px);
   text-align: center;
   font-size: 1.3rem;
   .laboratoria {
