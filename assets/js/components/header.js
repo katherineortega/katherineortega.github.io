@@ -2,14 +2,11 @@
 
 const Header = () => {
     //JSON data
-    /*const menu = state.language.menu;*/
+    const menu = state.language.menu;
 
     //Container General
-    const container = $('<header id="1" class="page pt-page-1" data-page="1"></header>');
-    const h1 = $('<h1>Page 1</h1>');
-    container.append(h1);
+    const container = $('<header id="1" class="container pt-page-1" data-page="1"></header>');
 
-    /*const container = $('<header class="container"></header>');
      const nav = $('<nav class="row"></nav>');
      const section = $('<div class="row main-section"></div>');
 
@@ -49,7 +46,7 @@ const Header = () => {
      section.append(pCareer);
 
      container.append(nav);
-     container.append(section);*/
+     container.append(section);
 
     return container;
 };

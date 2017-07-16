@@ -2,35 +2,31 @@
 
 const About = () => {
 
-    /*const menu = state.language.menu;*/
+    const menu = state.language.menu;
 
-    const container = $('<section id="2" class="page pt-page-2" data-page="2"></section>');
-    const h1 = $('<h1>Page 2</h1>');
-    container.append(h1);
+    const container = $('<section id="2" class="container pt-page-2" data-page="2"></section>');
 
+    const row = $('<div class="row"></div>');
+    const divAbout = $('<div class="col-lg-8 col-lg-offset-2"></div>');
 
-    /* const container = $('<section class="container about-section"></section>');
-     const row = $('<div class="row"></div>');
-     const divAbout = $('<div class="col-lg-8 col-lg-offset-2"></div>');
+    const subTitle = $('<h3 class="subtitle">' + menu.about.title + '</h3>');
+    const hr = $('<hr>');
+    const text = ('<p class="text">' + menu.about.brief + '</p>');
 
-     const subTitle = $('<h3 class="subtitle">' + menu.about.title + '</h3>');
-     const hr = $('<hr>');
-     const text = ('<p class="text">'+menu.about.brief+'</p>');
+    const divResume = $('<div class="curriculum col-lg-4  col-lg-offset-4"></div>');
+    const iconResume = $('<span></span>');
+    const resume = $('<span>' + state.language.main.resume + '</span>');
 
-     const divResume = $('<div class="curriculum col-lg-4  col-lg-offset-4"></div>');
-     const iconResume = $('<span></span>');
-     const resume = $('<span>'+state.language.main.resume+'</span>');
+    divResume.append(iconResume);
+    divResume.append(resume);
 
-     divResume.append(iconResume);
-     divResume.append(resume);
+    divAbout.append(subTitle);
+    divAbout.append(hr);
+    divAbout.append(text);
+    divAbout.append(divResume);
 
-     divAbout.append(subTitle);
-     divAbout.append(hr);
-     divAbout.append(text);
-     divAbout.append(divResume);
-
-     row.append(divAbout);
-     container.append(row);*/
+    row.append(divAbout);
+    container.append(row);
 
     return container;
 };
