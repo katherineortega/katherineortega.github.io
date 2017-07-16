@@ -18,28 +18,16 @@ const Contact = () => {
     const github = $('<span class="text link"><a href="' + state.data.github + '" target="_blank">GitHub</a></span>');
     const linkedin = $('<span class="text link"><a href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></span>');
 
-    const footerMenu = $('<div class="col-lg-12"></div>');
-    const ul = $('<ul></ul>');
-    const home = $('<li><a href="#">' + menu.home + '</a></li>');
-    const about = $('<li><a href="#">' + menu.about.title + '</a></li>');
-    const portfolio = $('<li><a href="#">' + menu.portfolio.title + '</a></li>');
-    const talk = $('<li><a href="#">' + menu.contact + '</a></li>');
 
     contact.append(number);
     contact.append(email);
     contact.append(github);
     contact.append(linkedin);
 
-    ul.append(home);
-    ul.append(about);
-    ul.append(portfolio);
-    ul.append(talk);
-    footerMenu.append(ul);
 
     divContact.append(subTitle);
     divContact.append(hr);
     divContact.append(contact);
-    divContact.append(footerMenu);
 
     row.append(divContact);
     container.append(row);

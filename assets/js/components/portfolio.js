@@ -9,20 +9,10 @@ const Portfolio = () => {
     const subtitle = $('<h3 class="subtitle">PORTAFOLIO</h3>');
     const hr = $('<hr>');
     const text = $('<p class="text">lorem</p>');
-    const ul = $('<ul></ul>');
-    const project1 = $('<li class="text"><a href="#">Pinterest</a></li>');
-    const project2 = $('<li class="text"><a href="#">Yape</a></li>');
-    const project3 = $('<li class="text"><a href="#">Pokédex</a></li>');
-    const project4 = $('<li class="text"><a href="#">Yummy!</a></li>');
 
-    ul.append(project1);
-    ul.append(project2);
-    ul.append(project3);
-    ul.append(project4);
     divPortfolio.append(subtitle);
     divPortfolio.append(hr);
     divPortfolio.append(text);
-    divPortfolio.append(ul);
     portfolio.append(divPortfolio);
     container.append(portfolio);
 

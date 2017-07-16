@@ -12,8 +12,8 @@
 const Navigator = () => {
     const container = $('<div class="navegadores"></div>');
     //Buttons
-    const up = $('<button class="up">up</button>');
-    const down = $('<button class="down">down</button>');
+    const up = $('<span class="up icon icon-up-arrow"></span>');
+    const down = $('<span class="down icon icon-down-arrow"></span>');
     container.append(up);
     container.append(down);
 
@@ -32,17 +32,17 @@ const Navigator = () => {
     const upInClass = ' page-moveFromTop page-ontop ';
 
     //Events
-    up.attr('disabled', 'disabled');
+    up.addClass('hide-arrow');
     counter = 1;
 
-    down.on('click', () => {
+    const downPage = () => {
         //Clean Class
         $('#' + prevPage + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
         $('#' + page + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
         $('#' + nextPage + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
 
         if (counter !== 8) {
-            up.removeAttr('disabled');
+            up.removeClass('icon-hide');
             page = $('#' + counter + '').data('page');
             nextPage = page + 1;
 
@@ -51,19 +51,18 @@ const Navigator = () => {
 
             counter++;
         } else {
-            down.attr('disabled', 'disabled');
+            down.addClass('icon-hide');
             $('#8').addClass(show);
         }
-    });
-
-    up.on('click', () => {
+    };
+    const upPage = () => {
         //Clean Class
         $('#' + prevPage + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
         $('#' + page + '').removeClass(show + downOutClass + downInClass + upInClass + upOutClass);
         $('#' + nextPage + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
 
         if (counter !== 1) {
-            down.removeAttr('disabled');
+            down.removeClass('icon-hide');
             page = $('#' + counter + '').data('page');
             prevPage = page - 1;
 
@@ -72,8 +71,24 @@ const Navigator = () => {
 
             counter--;
         } else {
-            up.attr('disabled', 'disabled');
+            up.addClass('icon-hide');
             $('#1').addClass(show);
+        }
+    };
+
+    down.on('click', () => {
+        downPage();
+    });
+    up.on('click', () =>{
+        upPage();
+    });
+
+    $(window).on('keydown', (i) => {
+        const key = i.keyCode || i.which;
+        if (key == 38) {
+            upPage();
+        } else if (key == 40) {
+            downPage();
         }
     });
 

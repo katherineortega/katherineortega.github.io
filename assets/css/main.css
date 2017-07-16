@@ -18,11 +18,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-down-arrow:before {
-  content: "\e900"; }
-
-.icon-up-arrow:before {
-  content: "\e901"; }
+.icon {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 10% 0;
+  color: #365164; }
+  .icon-hide {
+    opacity: .3; }
+  .icon-down-arrow:before {
+    content: "\e900"; }
+  .icon-up-arrow:before {
+    content: "\e901"; }
 
 .container {
   margin-right: auto;
@@ -992,7 +999,7 @@ body {
   position: fixed;
   z-index: 9999;
   bottom: 5%;
-  left: 45%; }
+  right: 3%; }
 
 .link {
   outline: none;
@@ -1104,9 +1111,6 @@ body {
   justify-content: center;
   align-items: flex-end; }
 
-.hide-button {
-  opacity: .5; }
-
 div[class*='col-'] {
   box-sizing: border-box; }
 
@@ -1173,43 +1177,10 @@ hr {
   .text-proyecto a.yummy-color {
     color: #f4bd46; }
 
-.contacto {
-  padding-top: 14%; }
-  .contacto .row > div {
-    text-align: center; }
-    .contacto .row > div .text {
-      font-weight: 400;
-      font-size: 2.5rem;
-      margin: 10px 0; }
-      .contacto .row > div .text a {
-        color: #e0dcdd; }
-      .contacto .row > div .text.link a {
-        text-decoration: none; }
-    .contacto .row > div > div {
-      margin-top: 5%; }
-  .contacto .row ul {
-    padding-top: 10%;
-    list-style: none; }
-    .contacto .row ul li {
-      display: inline-block;
-      padding: 0 4%;
-      font-size: 1.5rem;
-      font-weight: 500;
-      border-right: 2px solid #F4BD44; }
-      .contacto .row ul li:last-of-type {
-        border: 0; }
-      .contacto .row ul li a {
-        text-decoration: none;
-        color: #686369; }
-
 footer {
   text-align: center;
   font-size: 1.3rem; }
-  footer .laboratoria {
-    text-decoration: none;
-    color: #F4BD44; }
-  footer .developer {
-    color: #365164;
+  footer a {
     text-decoration: none; }
 
 /*
