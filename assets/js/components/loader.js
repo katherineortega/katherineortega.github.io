@@ -1,9 +1,16 @@
 'use strict';
 
 const Loader = (wrapper) => {
-
     //Loader
-    const loader = $('<div class="page pt-page-0 show-page"></div>');
+    const loader = $('<div class="container container--loader show-page"></div>');
+
+    const name = $('<div class="">');
+    const textName = $('<a class="link link--title" href="#">KATHERINE ORTEGA<span' +
+        ' data-letters="KATHERINE ORTEGA"></span><span data-letters="KATHERINE' +
+        ' ORTEGA"></span></a>');
+    name.append(textName);
+    loader.append(name);
+
     const language = $('<div class="btn"></div>');
     const spanish = $('<button class="btn-es">Español</button>');
     const english = $('<button class="btn-en">English</button>');

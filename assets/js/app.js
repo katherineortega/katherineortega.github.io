@@ -17,7 +17,7 @@ const state = {
 $(_ => {
     $.getJSON('assets/js/data.json', (res) => {
         state.data = res.data;
-        state.language = res.spanish;
+        state.language = res.english;
 
         const root = $('.root');
         render(root);
