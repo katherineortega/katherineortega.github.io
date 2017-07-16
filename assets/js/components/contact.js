@@ -9,7 +9,7 @@ const Contact = () => {
     const title = $('<h1 class="title">' + state.language.menu.contact + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-12 col-lg-5"></div>');
+    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
     const number = $('<p class="text">' + state.data.phone + '</p>');
     const email = $('<p class="text"><a href="#" target="_blank">' + state.data.email + '</a></p>');
     const github = $('<span class="text link"><a href="' + state.data.github + '" target="_blank">GitHub</a></span>');
@@ -35,6 +35,10 @@ const Contact = () => {
     row.append(colText);
     row.append(footer);
     container.append(row);
+
+    if (state.language == state.english){
+        container.addClass('english');
+    }
 
     return container;
 };

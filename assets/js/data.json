@@ -47,15 +47,15 @@
       "home": "Inicio",
       "about": {
         "title": "Sobre Mi",
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "skills": {
         "title": "Habili dades",
-        "brief" : ""
+        "brief" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "portfolio": {
         "title": "Porta folio",
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "contact": "Hablemos"
     },
@@ -65,16 +65,16 @@
     },
     "projects": [
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],
     "more": "Conóce más del proyecto aquí",
@@ -89,15 +89,15 @@
       "home": "Home",
       "about": {
         "title": "About Me",
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "skills": {
         "title": "Skills",
-        "brief" : ""
+        "brief" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "portfolio": {
         "title": " Port folio",
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "contact": "Let's Talk"
     },
@@ -107,16 +107,16 @@
     },
     "projects": [
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
-        "brief": ""
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],
     "more": "Know more about the project here",

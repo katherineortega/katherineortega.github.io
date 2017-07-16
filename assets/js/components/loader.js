@@ -1,6 +1,8 @@
 'use strict';
 
 const Loader = (wrapper) => {
+
+    wrapper.empty();
     //Loader
     const loader = $('<div class="container container--loader show-page"></div>');
 

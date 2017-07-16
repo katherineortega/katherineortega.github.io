@@ -9,14 +9,18 @@ const Skills = () => {
     const title = $('<h1 class="title">' + state.language.menu.skills.title + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-12 col-lg-5"></div>');
+    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
     const text = $('<p>' + state.language.menu.skills.brief + '</p>');
 
     colTitle.append(title);
     //colTitle.append(hr);
+    colText.append(text);
     row.append(colTitle);
     row.append(colText);
     container.append(row);
+    if (state.language == state.english){
+        container.addClass('english');
+    }
 
     return container;
 };
