@@ -1203,5 +1203,7 @@ footer {
 .english {
   background-color: #fff;
   color: #686369; }
+  .english .text-proyecto {
+    background: #fff; }
 
 /*# sourceMappingURL=main.css.map */
