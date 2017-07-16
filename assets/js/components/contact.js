@@ -10,10 +10,13 @@ const Contact = () => {
     //const hr = $('<hr>');
 
     const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
-    const number = $('<p class="text">' + state.data.phone + '</p>');
-    const email = $('<p class="text"><a href="#" target="_blank">' + state.data.email + '</a></p>');
-    const github = $('<span class="text link"><a href="' + state.data.github + '" target="_blank">GitHub</a></span>');
-    const linkedin = $('<span class="text link"><a href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></span>');
+    const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span>' + state.data.phone + '</p>');
+    const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a href="#"' +
+        ' target="_blank">' + state.data.email + '</a></p>');
+    const github = $('<p class="text"><span class="contact-icon icon-github-logo"></span><a' +
+        ' href="' + state.data.github + '" target="_blank">GitHub</a></p>');
+    const linkedin = $('<p class="text"><span class="contact-icon icon-linkedin"></span><a' +
+        ' href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></p>');
 
 
     colText.append(number);

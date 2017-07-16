@@ -113,6 +113,12 @@ body {
     display: flex;
     align-items: center;
   }
+  &--contact {
+    a {
+      color: $lighten-grey;
+      text-decoration: none;
+    }
+  }
 }
 
 .show-page {
@@ -131,14 +137,15 @@ body {
   bottom: 5%;
   right: 3%;
 }
-.main-logo{
+
+.main-logo {
   @include box-sizing(border-box);
   position: absolute;
   top: 5%;
   left: 2%;
   width: 40px;
 
-  img{
+  img {
     cursor: pointer;
     width: 100%;
   }
@@ -295,6 +302,7 @@ div[class*='col-'] {
 }
 
 .title {
+  color: lighten($grey, 40%);
   font-size: 7rem;
   text-transform: uppercase;
   overflow-wrap: break-word;
@@ -372,6 +380,14 @@ hr {
   }
 }
 
+.contact-icon {
+  margin-right: 20px;
+  color: $grey;
+  &:hover {
+    color: $yellow;
+  }
+}
+
 footer {
   position: absolute;
   bottom: 1%;
@@ -381,14 +397,30 @@ footer {
   a {
     text-decoration: none;
   }
+  .laboratoria {
+    color: $yellow;
+  }
+  .developer {
+    color: $darken-blue;
+  }
 }
 
 //Change Color
 
-.english{
+.english {
   background-color: $white;
   color: $grey;
-  .text-proyecto{
+  .container--contact {
+    .text {
+      a {
+        color: $grey;
+      }
+    }
+  }
+  .text-proyecto {
     background: $white;
+  }
+  .title {
+    color: $darken-blue;
   }
 }
