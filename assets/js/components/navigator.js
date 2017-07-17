@@ -113,7 +113,7 @@ const Navigator = (wrapper) => {
                     downPage();
                 }
             });
-        }, 1500);
+        }, 1000);
         backPage.addClass('hide-fixed');
     });
 

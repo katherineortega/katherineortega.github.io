@@ -90,7 +90,7 @@ const modalProjects = (data, i) => {
     //Page Transition
     setTimeout(() => {
         $('.icon-back').removeClass('hide-fixed');
-    }, 1000);
+    }, 800);
 
     let page = i,
         prevPage = page - 1,
