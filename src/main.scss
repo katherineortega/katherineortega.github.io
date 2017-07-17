@@ -495,6 +495,8 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
   a {
     text-decoration: none;
   }
@@ -503,6 +505,11 @@ footer {
   }
   .developer {
     color: $darken-blue;
+  }
+  p{
+    width: 45%;
+    font-size: 1rem;
+    margin-bottom: 10%;
   }
 }
 
@@ -548,5 +555,12 @@ footer {
   }
   .title{
     font-size: 7rem;
+  }
+  footer{
+    p{
+      width: 100%;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
   }
 }

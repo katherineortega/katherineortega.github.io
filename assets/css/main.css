@@ -1307,13 +1307,19 @@ footer {
   bottom: 1%;
   width: 100%;
   text-align: center;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center; }
   footer a {
     text-decoration: none; }
   footer .laboratoria {
     color: #F4BD44; }
   footer .developer {
     color: #365164; }
+  footer p {
+    width: 45%;
+    font-size: 1rem;
+    margin-bottom: 10%; }
 
 .english {
   background-color: #fff;
@@ -1343,6 +1349,11 @@ footer {
     right: 3%; }
 
   .title {
-    font-size: 7rem; } }
+    font-size: 7rem; }
+
+  footer p {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
