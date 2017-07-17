@@ -10,8 +10,10 @@ const Contact = () => {
     //const hr = $('<hr>');
 
     const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
-    const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span>' + state.data.phone + '</p>');
-    const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a href="#"' +
+    const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span><a' +
+        ' href="tel:+51'+state.data.phone+'">(+51) ' + state.data.phone + '</a></p>');
+    const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a' +
+        ' href="mailto:'+state.data.email+'?Subject='+state.language.sendEmail+'"' +
         ' target="_blank">' + state.data.email + '</a></p>');
     const github = $('<p class="text"><span class="contact-icon icon-github"></span><a' +
         ' href="' + state.data.github + '" target="_blank">GitHub</a></p>');

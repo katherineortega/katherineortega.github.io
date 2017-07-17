@@ -4,7 +4,7 @@
     "name": "Katherine",
     "lastName":"Ortega",
     "email": "katherine.ortegaramos@gmail.com",
-    "phone": "(+51) 992865356",
+    "phone": "992865356",
     "github": "https://github.com/katherineortega",
     "linkedin": "https://www.linkedin.com/in/katherinececiliaortegaramos/",
     "laboratoria": "http://laboratoria.la/",
@@ -79,6 +79,7 @@
     ],
     "more": "Conóce más del proyecto aquí",
     "mockup": "cellphone-black.png",
+    "sendEmail": "Hola,%20escribe%20aquí",
     "footer": {
       "made": "Hecho con amor en ",
       "by": " por "
@@ -126,6 +127,7 @@
     ],
     "more": "Know more about the project here",
     "mockup": "cellphone-white.png",
+    "sendEmail": "Hi,%20write%20here",
     "footer": {
       "made": "Made with love in ",
       "by": " by "
