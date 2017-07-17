@@ -17,22 +17,22 @@
     "projects": [
       {
         "name": "pinterest",
-        "link": "",
+        "link": "https://proyecto-pinterest.herokuapp.com/",
         "code": "https://github.com/RuthMeryCardenas/Proyecto-Pinterest"
       },
       {
         "name": "yape",
-        "link": "",
+        "link": "https://bcp-yape.herokuapp.com/",
         "code": "https://github.com/katherineortega/Yape"
       },
       {
         "name": "pokedex",
-        "link": "",
+        "link": "https://katherineortega.github.io/Leccion-42-Pokedex/",
         "code": "https://github.com/katherineortega/Leccion-42-Pokedex"
       },
       {
         "name": "yummy",
-        "link": "",
+        "link": "https://naovillaj.github.io/Yummy/",
         "code": "https://github.com/naovillaj/Yummy"
       }
     ]

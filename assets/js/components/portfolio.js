@@ -68,30 +68,35 @@ const projects = (container) => {
 };
 
 const modalProjects = (data, i) => {
-
     $(window).off('keydown');
-
     const index = i - 4;
 
     const modal = $('<section class="container container--modal"></section>');
 
     const row = $('<div class="row"></div>');
     const colMockUp = $('<div class="col-xs-12 col-lg-3 col-lg-offset-2"></div>');
-    const mockUp = $('<img src="assets/img/' + state.language.mockup + '"/>');
+    const divMockup = $('<div class="container--mockup"></div>');
+    const mockUp = $('<img class="mockup-cellphone" src="assets/img/' + state.language.mockup + '"/>');
+    const insideMockUp = $('<div class="container--iframe"></div>');
+    const iframe = $('<iframe src="' + state.data.projects[index].link+ '"></iframe>');
 
     const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
     const text = $('<h1 class="text">' + state.data.projects[index].name + '</h1>');
 
-    colMockUp.append(mockUp);
+    insideMockUp.append(iframe);
+    divMockup.append(insideMockUp);
+    divMockup.append(mockUp);
+    colMockUp.append(divMockup);
+
     colText.append(text);
+
     row.append(colMockUp);
     row.append(colText);
 
     //Page Transition
     setTimeout(() => {
         $('.icon-back').removeClass('hide-fixed');
-    }, 800);
-
+    }, 500);
     let page = i,
         prevPage = page - 1,
         nextPage = page + 1;
@@ -105,14 +110,10 @@ const modalProjects = (data, i) => {
 
     $('.navegadores').addClass(' hide-fixed ');
     $('.main-logo').addClass(' hide-fixed ');
-
     //End Page Transition
 
+    if (state.language == state.english) {modal.addClass('english');}
+
     modal.append(row);
-
-    if (state.language == state.english) {
-        modal.addClass('english');
-    }
-
     return modal;
 };
