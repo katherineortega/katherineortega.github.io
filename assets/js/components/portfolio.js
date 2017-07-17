@@ -78,17 +78,47 @@ const modalProjects = (data, i) => {
     const divMockup = $('<div class="container--mockup"></div>');
     const mockUp = $('<img class="mockup-cellphone" src="assets/img/' + state.language.mockup + '"/>');
     const insideMockUp = $('<div class="container--iframe"></div>');
-    const iframe = $('<iframe src="' + state.data.projects[index].link+ '"></iframe>');
+    const iframe = $('<iframe src="' + state.data.projects[index].link+ '"><p>Your browser does not support iframes.</p></iframe>');
 
-    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
-    const text = $('<h1 class="text">' + state.data.projects[index].name + '</h1>');
+    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1' +
+        ' container--modal__info"></div>');
+    const title = $('<h1 class="modal-title">' + state.data.projects[index].name + '</h1>');
+    colText.append(title);
+
+    const divOne = $('<div class="info--one"></div>');
+    const text = $('<p class="text one">' + state.language.projects[index].synopsis + '</p>');
+    const text2 = $('<p class="text two">' + state.language.projects[index].synopsis + '</p>');
+    const iconNext = $('<span class="icon-down-arrow"></span>');
+
+    const divTwo = $('<div class="info--two"></div>');
+    const text3 = $('<p class="text three">' + state.language.projects[index].synopsis + '</p>');
+    const text4 = $('<p class="text four">' + state.language.projects[index].synopsis + '</p>');
+    const iconBack = $('<span class="icon-up-arrow"></span>');
 
     insideMockUp.append(iframe);
     divMockup.append(insideMockUp);
     divMockup.append(mockUp);
     colMockUp.append(divMockup);
+    divOne.append(text);
+    divOne.append(text2);
+    divOne.append(iconNext);
+    divTwo.append(text3);
+    divTwo.append(text4);
+    divTwo.append(iconBack);
 
-    colText.append(text);
+    colText.append(divOne);
+
+    iconNext.on('click', () => {
+        divOne.remove();
+        colText.append(divTwo);
+        divTwo.fadeIn();
+    });
+
+    iconBack.on('click', () => {
+        divTwo.remove();
+        colText.append(divOne);
+        divOne.fadeIn();
+    });
 
     row.append(colMockUp);
     row.append(colText);

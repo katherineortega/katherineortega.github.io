@@ -1005,6 +1005,15 @@ body {
   .container--contact a {
     color: #e0dcdd;
     text-decoration: none; }
+  .container--modal__info {
+    height: 70%; }
+    .container--modal__info .text {
+      font-size: 1rem;
+      letter-spacing: 0.1rem; }
+    .container--modal__info .modal-title {
+      font-size: 2rem; }
+      .container--modal__info .modal-title:first-letter {
+        text-transform: uppercase; }
   .container--mockup {
     position: relative;
     width: 350px;
@@ -1023,7 +1032,8 @@ body {
     .container--iframe iframe {
       border: 0;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      touch-action: manipulation; }
 
 .show-page {
   visibility: visible;

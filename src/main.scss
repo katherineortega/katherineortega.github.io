@@ -120,7 +120,19 @@ body {
     }
   }
   &--modal{
-
+      &__info{
+        height: 70%;
+        .text{
+          font-size: 1rem;
+          letter-spacing: 0.1rem;
+        }
+        .modal-title{
+          font-size: 2rem;
+          &:first-letter{
+          text-transform: uppercase;
+          }
+        }
+      }
   }
   &--mockup{
     position: relative;
@@ -143,6 +155,7 @@ body {
       border: 0;
       width: 100%;
       height: 100%;
+      touch-action: manipulation;
     }
   };
 }
