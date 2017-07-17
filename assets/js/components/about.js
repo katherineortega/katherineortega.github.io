@@ -11,7 +11,7 @@ const About = () => {
     const title = $('<h1 class="title">' + state.language.menu.about.title + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
+    const colText = $('<div class="col-xs-10 col-lg-4 col-lg-offset-1"></div>');
     const text = $('<p class="text">' + state.language.menu.about.brief + '</p>');
 
     colTitle.append(title);
