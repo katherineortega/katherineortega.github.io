@@ -67,18 +67,31 @@ const projects = (container) => {
     });
 };
 
+const modalProjects = (data, i) => {
 
-
-const modalProjects = ( data , i) => {
-    const modal = $('<section class="container container--modal"></section>');
-    const h1 = $('<h1>hola</h1>');
-    const backPage = $('<span class="icon-up-arrow"></span>');
+    $(window).off('keydown');
 
     const index = i - 4;
-    console.log(data);
-    console.log(state.language.projects[index]);
+
+    const modal = $('<section class="container container--modal"></section>');
+
+    const row = $('<div class="row"></div>');
+    const colMockUp = $('<div class="col-xs-12 col-lg-3 col-lg-offset-2"></div>');
+    const mockUp = $('<img src="assets/img/' + state.language.mockup + '"/>');
+
+    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
+    const text = $('<h1 class="text">' + state.data.projects[index].name + '</h1>');
+
+    colMockUp.append(mockUp);
+    colText.append(text);
+    row.append(colMockUp);
+    row.append(colText);
 
     //Page Transition
+    setTimeout(() => {
+        $('.icon-back').removeClass('hide-fixed');
+    }, 1000);
+
     let page = i,
         prevPage = page - 1,
         nextPage = page + 1;
@@ -93,25 +106,13 @@ const modalProjects = ( data , i) => {
     $('.navegadores').addClass(' hide-fixed ');
     $('.main-logo').addClass(' hide-fixed ');
 
-    backPage.on('click', () => {
-        $('#' + page + '').removeClass(removeAnimation);
-        modal.removeClass(removeAnimation);
-
-        $('#' + page + '').addClass(show + leftInClass);
-        modal.addClass(show + leftOutClass);
-
-        $('.navegadores').removeClass(' hide-fixed ');
-        $('.main-logo').removeClass(' hide-fixed ');
-
-        setTimeout(() => {
-            modal.remove();
-        }, 1500);
-    });
     //End Page Transition
 
-    modal.addClass();
-    modal.append(backPage);
-    modal.append(h1);
+    modal.append(row);
+
+    if (state.language == state.english) {
+        modal.addClass('english');
+    }
 
     return modal;
 };

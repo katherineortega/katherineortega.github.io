@@ -120,7 +120,7 @@ body {
     }
   }
   &--modal{
-    background-color: #00B19F;
+
   }
 }
 
@@ -133,7 +133,11 @@ body {
 .hide-fixed{
   display: none;
 }
-
+.icon-back{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
 .page-ontop {
   z-index: 9999;
 }

@@ -1005,8 +1005,6 @@ body {
   .container--contact a {
     color: #e0dcdd;
     text-decoration: none; }
-  .container--modal {
-    background-color: #00B19F; }
 
 .show-page {
   visibility: visible;
@@ -1014,6 +1012,11 @@ body {
 
 .hide-fixed {
   display: none; }
+
+.icon-back {
+  position: absolute;
+  top: 5%;
+  left: 5%; }
 
 .page-ontop {
   z-index: 9999; }

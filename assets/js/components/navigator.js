@@ -22,9 +22,15 @@ const Navigator = (wrapper) => {
 
     divLogo.append(logo);
 
+    //Back Modal
+    const backPage = $('<span class="icon-back icon-up-arrow"></span>');
+    backPage.addClass('hide-fixed');
+
     //Buttons
     const up = $('<span class="up icon icon-up-arrow"></span>');
     const down = $('<span class="down icon icon-down-arrow"></span>');
+
+
     container.append(up);
     container.append(down);
 
@@ -60,9 +66,9 @@ const Navigator = (wrapper) => {
     };
     const upPage = () => {
         //Clean Class
-        $('#' + prevPage + '').removeClass( removeAnimation );
-        $('#' + page + '').removeClass( removeAnimation );
-        $('#' + nextPage + '').removeClass( removeAnimation );
+        $('#' + prevPage + '').removeClass(removeAnimation);
+        $('#' + page + '').removeClass(removeAnimation);
+        $('#' + nextPage + '').removeClass(removeAnimation);
 
         if (counter !== 1) {
             down.removeClass('icon-hide');
@@ -86,6 +92,31 @@ const Navigator = (wrapper) => {
         upPage();
     });
 
+    backPage.on('click', () => {
+        let pages = counter;
+        $('#' + pages + '').removeClass(removeAnimation);
+        $('.container--modal').removeClass(removeAnimation);
+
+        $('#' + pages + '').addClass(show + leftInClass);
+        $('.container--modal').addClass(show + leftOutClass);
+
+        $('.navegadores').removeClass(' hide-fixed ');
+        $('.main-logo').removeClass(' hide-fixed ');
+
+        setTimeout(() => {
+            $('.container--modal').remove();
+            $(window).on('keydown', (i) => {
+                const key = i.keyCode || i.which;
+                if (key == 38) {
+                    upPage();
+                } else if (key == 40) {
+                    downPage();
+                }
+            });
+        }, 1500);
+        backPage.addClass('hide-fixed');
+    });
+
     $(window).on('keydown', (i) => {
         const key = i.keyCode || i.which;
         if (key == 38) {
@@ -97,4 +128,5 @@ const Navigator = (wrapper) => {
 
     wrapper.append(divLogo);
     wrapper.append(container);
+    wrapper.append(backPage);
 };
