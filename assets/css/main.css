@@ -1021,7 +1021,8 @@ body {
   .container .row {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
   .container--project {
     display: flex;
     align-items: center; }
@@ -1091,8 +1092,8 @@ body {
 .navegadores {
   position: fixed;
   z-index: 9999;
-  bottom: 5%;
-  right: 3%; }
+  bottom: 3%;
+  right: 5%; }
   .navegadores .icon {
     font-size: 2.3rem;
     font-weight: 600; }
@@ -1100,8 +1101,8 @@ body {
 .main-logo {
   box-sizing: border-box;
   position: absolute;
-  top: 5%;
-  left: 2%;
+  bottom: 5%;
+  left: 5%;
   width: 40px; }
   .main-logo img {
     cursor: pointer;
@@ -1226,7 +1227,7 @@ div[class*='col-'] {
 
 .title {
   color: #cdcbce;
-  font-size: 7rem;
+  font-size: 4rem;
   text-transform: uppercase;
   overflow-wrap: break-word;
   text-align: right; }
@@ -1329,6 +1330,19 @@ footer {
     font-size: 6rem; }
 
   .container--loader {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .container .row {
+    flex-direction: row; }
+
+  .main-logo {
+    top: 5%;
+    left: 2%; }
+
+  .navegadores {
+    bottom: 5%;
+    right: 3%; }
+
+  .title {
+    font-size: 7rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -115,6 +115,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
 
   &--project {
@@ -217,8 +218,8 @@ body {
 .navegadores {
   position: fixed;
   z-index: 9999;
-  bottom: 5%;
-  right: 3%;
+  bottom: 3%;
+  right: 5%;
   .icon {
     font-size: 2.3rem;
     font-weight: 600;
@@ -228,8 +229,8 @@ body {
 .main-logo {
   @include box-sizing(border-box);
   position: absolute;
-  top: 5%;
-  left: 2%;
+  bottom: 5%;
+  left: 5%;
   width: 40px;
 
   img {
@@ -390,7 +391,7 @@ div[class*='col-'] {
 
 .title {
   color: lighten($grey, 40%);
-  font-size: 7rem;
+  font-size: 4rem;
   text-transform: uppercase;
   overflow-wrap: break-word;
   text-align: right;
@@ -533,5 +534,19 @@ footer {
     &--loader{
       font-size: 2rem;
     }
+    .row{
+      flex-direction: row;
+    }
+  }
+  .main-logo{
+    top: 5%;
+    left: 2%;
+  }
+  .navegadores{
+    bottom: 5%;
+    right: 3%;
+  }
+  .title{
+    font-size: 7rem;
   }
 }

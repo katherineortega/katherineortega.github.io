@@ -5,7 +5,7 @@ const Skills = () => {
         ' data-page="2"></section>');
     const row = $('<div class="row"></div>');
 
-    const colTitle = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
+    const colTitle = $('<div class="col-xs-10 col-xs-offset-1 col-lg-4 col-lg-offset-1"></div>');
     const title = $('<h1 class="title">' + state.language.menu.skills.title + '</h1>');
     //const hr = $('<hr>');
 
