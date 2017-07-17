@@ -100,10 +100,10 @@ const Navigator = (wrapper) => {
         $('#' + pages + '').addClass(show + leftInClass);
         $('.container--modal').addClass(show + leftOutClass);
 
-        $('.navegadores').removeClass(' hide-fixed ');
-        $('.main-logo').removeClass(' hide-fixed ');
 
         setTimeout(() => {
+            $('.navegadores').removeClass(' hide-fixed ');
+            $('.main-logo').removeClass(' hide-fixed ');
             $('.container--modal').remove();
             $(window).on('keydown', (i) => {
                 const key = i.keyCode || i.which;
@@ -113,7 +113,7 @@ const Navigator = (wrapper) => {
                     downPage();
                 }
             });
-        }, 1000);
+        }, 500);
         backPage.addClass('hide-fixed');
     });
 

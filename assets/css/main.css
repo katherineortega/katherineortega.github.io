@@ -1013,6 +1013,11 @@ body {
     align-items: center;
     font-size: 2rem;
     text-align: center; }
+    .container--loader .btn a {
+      border-bottom: 2px solid #e0dcdd;
+      padding-bottom: 10px; }
+      .container--loader .btn a:hover {
+        border-bottom-color: #365164; }
   .container .row {
     height: 100%;
     display: flex;
