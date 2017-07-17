@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?tbbwdg');
-  src: url('../fonts/icomoon.eot?tbbwdg#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?tbbwdg') format('truetype'),
-  url('../fonts/icomoon.woff?tbbwdg') format('woff'),
-  url('../fonts/icomoon.svg?tbbwdg#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?vkys9z');
+  src:  url('../fonts/icomoon.eot?vkys9z#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?vkys9z') format('truetype'),
+  url('../fonts/icomoon.woff?vkys9z') format('woff'),
+  url('../fonts/icomoon.svg?vkys9z#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,26 +30,54 @@
   cursor: pointer;
   margin: 10% 0;
   color: #365164;
+
   &-hide {
     opacity: .3;
   }
-  &-smartphone:before {
-    content: "\e902";
-  }
-  &-github-logo:before {
+  &-github:before {
     content: "\e903";
-  }
-  &-mail:before {
-    content: "\e904";
   }
   &-linkedin:before {
     content: "\e905";
   }
-  &-down-arrow:before {
+  &-smartphone:before {
     content: "\e900";
   }
-  &-up-arrow:before {
+  &-download:before {
     content: "\e901";
+  }
+  &-menu:before {
+    content: "\e902";
+  }
+  &-cross:before {
+    content: "\e904";
+  }
+  &-chevron-down:before {
+    content: "\e906";
+  }
+  &-chevron-left:before {
+    content: "\e907";
+  }
+  &-chevron-right:before {
+    content: "\e908";
+  }
+  &-chevron-up:before {
+    content: "\e909";
+  }
+  &-arrow-down:before {
+    content: "\e90a";
+  }
+  &-arrow-left:before {
+    content: "\e90b";
+  }
+  &-arrow-right:before {
+    content: "\e90c";
+  }
+  &-arrow-up:before {
+    content: "\e90d";
+  }
+  &-mail:before {
+    content: "\e90e";
   }
 }
 

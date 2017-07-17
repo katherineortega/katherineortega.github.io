@@ -13,7 +13,7 @@ const Contact = () => {
     const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span>' + state.data.phone + '</p>');
     const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a href="#"' +
         ' target="_blank">' + state.data.email + '</a></p>');
-    const github = $('<p class="text"><span class="contact-icon icon-github-logo"></span><a' +
+    const github = $('<p class="text"><span class="contact-icon icon-github"></span><a' +
         ' href="' + state.data.github + '" target="_blank">GitHub</a></p>');
     const linkedin = $('<p class="text"><span class="contact-icon icon-linkedin"></span><a' +
         ' href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></p>');

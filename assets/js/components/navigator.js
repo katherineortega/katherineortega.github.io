@@ -23,12 +23,12 @@ const Navigator = (wrapper) => {
     divLogo.append(logo);
 
     //Back Modal
-    const backPage = $('<span class="icon-back icon-up-arrow"></span>');
+    const backPage = $('<span class="icon-back icon-cross"></span>');
     backPage.addClass('hide-fixed');
 
     //Buttons
-    const up = $('<span class="up icon icon-up-arrow"></span>');
-    const down = $('<span class="down icon icon-down-arrow"></span>');
+    const up = $('<span class="up icon icon-chevron-up"></span>');
+    const down = $('<span class="down icon icon-chevron-down"></span>');
 
 
     container.append(up);

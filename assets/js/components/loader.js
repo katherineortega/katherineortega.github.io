@@ -28,14 +28,15 @@ const Loader = (wrapper) => {
     //Pages
     const container = $('<div class="perspective"></div>');
     const content = (parent) => {
+        container.empty();
         container.append(About().addClass('show-page'));
         container.append(Skills());
         container.append(Portfolio());
         projects(container);
         container.append(Contact());
 
+        parent.append(container);
         setTimeout(() => {
-            parent.append(container);
             parent.append(Navigator(wrapper));
             loader.removeClass('show-page');
         }, 2000);

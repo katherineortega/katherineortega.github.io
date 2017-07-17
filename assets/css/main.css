@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?tbbwdg");
-  src: url("../fonts/icomoon.eot?tbbwdg#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tbbwdg") format("truetype"), url("../fonts/icomoon.woff?tbbwdg") format("woff"), url("../fonts/icomoon.svg?tbbwdg#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?vkys9z");
+  src: url("../fonts/icomoon.eot?vkys9z#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?vkys9z") format("truetype"), url("../fonts/icomoon.woff?vkys9z") format("woff"), url("../fonts/icomoon.svg?vkys9z#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -26,18 +26,36 @@
   color: #365164; }
   .icon-hide {
     opacity: .3; }
-  .icon-smartphone:before {
-    content: "\e902"; }
-  .icon-github-logo:before {
+  .icon-github:before {
     content: "\e903"; }
-  .icon-mail:before {
-    content: "\e904"; }
   .icon-linkedin:before {
     content: "\e905"; }
-  .icon-down-arrow:before {
+  .icon-smartphone:before {
     content: "\e900"; }
-  .icon-up-arrow:before {
+  .icon-download:before {
     content: "\e901"; }
+  .icon-menu:before {
+    content: "\e902"; }
+  .icon-cross:before {
+    content: "\e904"; }
+  .icon-chevron-down:before {
+    content: "\e906"; }
+  .icon-chevron-left:before {
+    content: "\e907"; }
+  .icon-chevron-right:before {
+    content: "\e908"; }
+  .icon-chevron-up:before {
+    content: "\e909"; }
+  .icon-arrow-down:before {
+    content: "\e90a"; }
+  .icon-arrow-left:before {
+    content: "\e90b"; }
+  .icon-arrow-right:before {
+    content: "\e90c"; }
+  .icon-arrow-up:before {
+    content: "\e90d"; }
+  .icon-mail:before {
+    content: "\e90e"; }
 
 .container {
   margin-right: auto;
@@ -1043,9 +1061,11 @@ body {
   display: none; }
 
 .icon-back {
+  font-size: 3rem;
+  cursor: pointer;
   position: absolute;
   top: 5%;
-  left: 5%; }
+  right: 5%; }
 
 .page-ontop {
   z-index: 9999; }
@@ -1055,6 +1075,9 @@ body {
   z-index: 9999;
   bottom: 5%;
   right: 3%; }
+  .navegadores .icon {
+    font-size: 2.3rem;
+    font-weight: 600; }
 
 .main-logo {
   box-sizing: border-box;
