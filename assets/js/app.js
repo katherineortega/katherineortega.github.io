@@ -16,6 +16,7 @@ const state = {
     language: null
 };
 
+
 $(_ => {
     $.getJSON('assets/js/data.json', (res) => {
         state.data = res.data;

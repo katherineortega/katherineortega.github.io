@@ -1,13 +1,17 @@
 'use strict';
 
-/*case 'left':
- outClass = ' pt-page-moveToLeftEasing pt-page-ontop ';
- inClass = ' pt-page-moveFromRight ';
- break;
- case 'right':
- outClass = ' pt-page-moveToRightEasing pt-page-ontop ';
- inClass = ' pt-page-moveFromLeft ';
- break;*/
+//Animation Classes Page Translation
+const show = ' show-page ';
+const downOutClass = ' page-moveToTopEasing ';
+const downInClass = ' page-moveFromBottom  page-ontop ';
+const upOutClass = ' page-moveToBottomEasing ';
+const upInClass = ' page-moveFromTop page-ontop ';
+const rightOutClass = ' page-moveToLeftEasing page-ontop ';
+const rightInClass = ' page-moveFromRight ';
+const leftOutClass = ' page-moveToRightEasing page-ontop ';
+const leftInClass = ' page-moveFromLeft ';
+
+const removeAnimation = show + upInClass + upOutClass + downInClass + downOutClass + rightInClass + rightOutClass + leftInClass + leftOutClass;
 
 const Navigator = (wrapper) => {
     const container = $('<div class="navegadores"></div>');
@@ -30,23 +34,15 @@ const Navigator = (wrapper) => {
         nextPage,
         prevPage;
 
-    //Animation Classes
-
-    const show = ' show-page ';
-    const downOutClass = ' page-moveToTopEasing ';
-    const downInClass = ' page-moveFromBottom  page-ontop ';
-    const upOutClass = ' page-moveToBottomEasing ';
-    const upInClass = ' page-moveFromTop page-ontop ';
-
     //Events
     up.addClass('hide-arrow');
     counter = 1;
 
     const downPage = () => {
         //Clean Class
-        $('#' + prevPage + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
-        $('#' + page + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
-        $('#' + nextPage + '').removeClass(show + upInClass + upOutClass + downInClass + downOutClass);
+        $('#' + prevPage + '').removeClass(removeAnimation);
+        $('#' + page + '').removeClass(removeAnimation);
+        $('#' + nextPage + '').removeClass(removeAnimation);
 
         if (counter !== 8) {
             up.removeClass('icon-hide');
@@ -64,9 +60,9 @@ const Navigator = (wrapper) => {
     };
     const upPage = () => {
         //Clean Class
-        $('#' + prevPage + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
-        $('#' + page + '').removeClass(show + downOutClass + downInClass + upInClass + upOutClass);
-        $('#' + nextPage + '').removeClass(show + downInClass + downOutClass + upInClass + upOutClass);
+        $('#' + prevPage + '').removeClass( removeAnimation );
+        $('#' + page + '').removeClass( removeAnimation );
+        $('#' + nextPage + '').removeClass( removeAnimation );
 
         if (counter !== 1) {
             down.removeClass('icon-hide');
@@ -86,7 +82,7 @@ const Navigator = (wrapper) => {
     down.on('click', () => {
         downPage();
     });
-    up.on('click', () =>{
+    up.on('click', () => {
         upPage();
     });
 

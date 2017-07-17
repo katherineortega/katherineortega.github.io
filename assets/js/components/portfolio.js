@@ -10,7 +10,7 @@ const Portfolio = () => {
     //const hr = $('<hr>');
 
     const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
-    const text = $('<p>' + state.language.menu.portfolio.brief + '</p>');
+    const text = $('<p class="text">' + state.language.menu.portfolio.brief + '</p>');
 
     colTitle.append(title);
     //colTitle.append(hr);
@@ -19,7 +19,7 @@ const Portfolio = () => {
     row.append(colText);
     container.append(row);
 
-    if (state.language == state.english){
+    if (state.language == state.english) {
         container.addClass('english');
     }
     return container;
@@ -37,7 +37,7 @@ const projects = (container) => {
         const divLogo = $('<div class="col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
         const logo = $('<img class="img-responsive" src="assets/img/' + state.language.projects[index].logo + '" alt="' + data.name + '">');
         const divBrief = $('<div class="col-lg-6 col-lg-offset-6 text-proyecto"></div>');
-        const brief = $('<p>' + state.language.projects[index].brief + '</p>');
+        const brief = $('<p>' + state.language.projects[index].synopsis + '</p>');
         const divLink = $('<p></p>');
         const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + '</a>');
 
@@ -54,10 +54,64 @@ const projects = (container) => {
         divProject.append(divBrief);
         project.append(divProject);
 
-        if (state.language == state.english){
+        //Modal
+        link.on('click', () => {
+            container.append(modalProjects(data, i));
+        });
+
+        if (state.language == state.english) {
             project.addClass('english');
         }
 
         container.append(project);
     });
+};
+
+
+
+const modalProjects = ( data , i) => {
+    const modal = $('<section class="container container--modal"></section>');
+    const h1 = $('<h1>hola</h1>');
+    const backPage = $('<span class="icon-up-arrow"></span>');
+
+    const index = i - 4;
+    console.log(data);
+    console.log(state.language.projects[index]);
+
+    //Page Transition
+    let page = i,
+        prevPage = page - 1,
+        nextPage = page + 1;
+
+    $('#' + prevPage + '').removeClass(removeAnimation);
+    $('#' + page + '').removeClass(removeAnimation);
+    $('#' + nextPage + '').removeClass(removeAnimation);
+
+    $('#' + page + '').addClass(show + rightOutClass);
+    modal.addClass(show + rightInClass);
+
+    $('.navegadores').addClass(' hide-fixed ');
+    $('.main-logo').addClass(' hide-fixed ');
+
+    backPage.on('click', () => {
+        $('#' + page + '').removeClass(removeAnimation);
+        modal.removeClass(removeAnimation);
+
+        $('#' + page + '').addClass(show + leftInClass);
+        modal.addClass(show + leftOutClass);
+
+        $('.navegadores').removeClass(' hide-fixed ');
+        $('.main-logo').removeClass(' hide-fixed ');
+
+        setTimeout(() => {
+            modal.remove();
+        }, 1500);
+    });
+    //End Page Transition
+
+    modal.addClass();
+    modal.append(backPage);
+    modal.append(h1);
+
+    return modal;
 };

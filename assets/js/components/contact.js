@@ -24,7 +24,6 @@ const Contact = () => {
     colText.append(github);
     colText.append(linkedin);
 
-
     const footer = $('<footer></footer>');
     const p = $('<p>' + state.data.copyright + ' | ' + state.language.footer.made + ' <a href="' + state.data.laboratoria + '"' +
         ' class="laboratoria" target="_blank">Laboratoria</a> ' + state.language.footer.by + ' <a href="' + state.data.portfolio + '"' +

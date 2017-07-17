@@ -62,19 +62,19 @@
     "projects": [
       {
         "logo": "logo-pinterest.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-yape.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-pokedex.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-yummy.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],
     "more": "Conóce más del proyecto aquí",
@@ -108,19 +108,19 @@
     "projects": [
       {
         "logo": "logo-pinterest-color.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-yape-color.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-pokedex-color.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       {
         "logo": "logo-yummy-color.png",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       }
     ],
     "more": "Know more about the project here",

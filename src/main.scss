@@ -119,11 +119,19 @@ body {
       text-decoration: none;
     }
   }
+  &--modal{
+    background-color: #00B19F;
+  }
 }
 
 .show-page {
   visibility: visible;
   z-index: 1;
+}
+
+//Modal
+.hide-fixed{
+  display: none;
 }
 
 .page-ontop {
@@ -317,7 +325,7 @@ hr {
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   margin: 5% 0;
 }
@@ -357,16 +365,20 @@ hr {
 }
 
 .text-proyecto {
-  background-color: $darken-grey;
+  background-color: #0d0d0d;
   position: absolute;
-  border: 5px solid $grey;
+  border: 5px solid #686369;
   height: 400px;
-  padding: 10% 5%;
+  padding: 0 5%;
   top: 13%;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   a {
+    text-decoration: none;
     &.pinterest-color {
       color: $pinterest;
     }
@@ -379,6 +391,11 @@ hr {
     &.yummy-color {
       color: $yummy;
     }
+  }
+}
+.container--contact{
+  .text{
+    font-size: 1.8rem;
   }
 }
 
