@@ -39,7 +39,7 @@ const projects = (container) => {
         const divBrief = $('<div class="col-lg-6 col-lg-offset-6 text-proyecto"></div>');
         const brief = $('<p>' + state.language.projects[index].synopsis + '</p>');
         const divLink = $('<p></p>');
-        const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + '</a>');
+        const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + ' <span class="icon-arrow-right"></span></a>');
 
         if (index == 1 || index == 3) {
             divLogo.addClass('col-lg-offset-5');
@@ -71,6 +71,10 @@ const modalProjects = (data, i) => {
     $(window).off('keydown');
     const index = i - 4;
 
+    if(state.data.projects[index].name == 'pokedex'){
+        state.data.projects[index].name = 'pokédex';
+    }
+
     const modal = $('<section class="container container--modal"></section>');
 
     const row = $('<div class="row"></div>');
@@ -85,15 +89,15 @@ const modalProjects = (data, i) => {
     const title = $('<h1 class="modal-title">' + state.data.projects[index].name + '</h1>');
     colText.append(title);
 
-    const divOne = $('<div class="info--one"></div>');
+    const divOne = $('<div></div>');
     const text = $('<p class="text one">' + state.language.projects[index].synopsis + '</p>');
     const text2 = $('<p class="text two">' + state.language.projects[index].synopsis + '</p>');
-    const iconNext = $('<span class="icon-down-arrow"></span>');
+    /*const iconNext = $('<span class="icon-chevron-right"></span>');*/
 
-    const divTwo = $('<div class="info--two"></div>');
+    const divTwo = $('<div class="info-project"></div>');
     const text3 = $('<p class="text three">' + state.language.projects[index].synopsis + '</p>');
     const text4 = $('<p class="text four">' + state.language.projects[index].synopsis + '</p>');
-    const iconBack = $('<span class="icon-up-arrow"></span>');
+    /*const iconBack = $('<span class="icon-chevron-left"></span>');*/
 
     insideMockUp.append(iframe);
     divMockup.append(insideMockUp);
@@ -101,24 +105,23 @@ const modalProjects = (data, i) => {
     colMockUp.append(divMockup);
     divOne.append(text);
     divOne.append(text2);
-    divOne.append(iconNext);
+    /*divOne.append(iconNext);*/
     divTwo.append(text3);
     divTwo.append(text4);
-    divTwo.append(iconBack);
+    /*divTwo.append(iconBack);*/
 
     colText.append(divOne);
+    colText.append(divTwo);
 
-    iconNext.on('click', () => {
-        divOne.remove();
-        colText.append(divTwo);
-        divTwo.fadeIn();
+    /*iconNext.on('click', () => {
+        divOne.addClass('info-project');
+        divTwo.removeClass('info-project');
     });
 
     iconBack.on('click', () => {
-        divTwo.remove();
-        colText.append(divOne);
-        divOne.fadeIn();
-    });
+        divTwo.addClass('info-project');
+        divOne.removeClass('info-project');
+    });*/
 
     row.append(colMockUp);
     row.append(colText);

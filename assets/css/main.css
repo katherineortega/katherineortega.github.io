@@ -1011,7 +1011,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center; }
     .container--loader .btn a {
       border-bottom: 2px solid #e0dcdd;
@@ -1029,14 +1029,27 @@ body {
     color: #e0dcdd;
     text-decoration: none; }
   .container--modal__info {
-    height: 70%; }
+    height: 70%;
+    position: relative;
+    /*text-align: justify;*/ }
+    .container--modal__info [class*='icon-'] {
+      font-size: 2rem;
+      color: #365164;
+      font-weight: 600;
+      cursor: pointer;
+      position: absolute; }
+    .container--modal__info .icon-chevron-left {
+      left: 5%; }
+    .container--modal__info .icon-chevron-right {
+      right: 5%; }
     .container--modal__info .text {
       font-size: 1rem;
       letter-spacing: 0.1rem; }
     .container--modal__info .modal-title {
-      font-size: 2rem; }
-      .container--modal__info .modal-title:first-letter {
-        text-transform: uppercase; }
+      font-size: 3rem;
+      text-transform: uppercase; }
+    .container--modal__info .info-project {
+      display: none; }
   .container--mockup {
     position: relative;
     width: 350px;
@@ -1098,7 +1111,7 @@ body {
   outline: none;
   text-decoration: none;
   position: relative;
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 1;
   color: #686369;
   display: inline-block;
@@ -1227,7 +1240,8 @@ hr {
 .text {
   font-size: 1.2rem;
   line-height: 1.3;
-  margin: 5% 0; }
+  margin: 5% 0;
+  /*text-align: justify;*/ }
 
 .curriculum {
   border: 3px solid #686369;
@@ -1309,5 +1323,12 @@ footer {
     background: #fff; }
   .english .title {
     color: #365164; }
+
+@media (min-width: 1200px) {
+  .link {
+    font-size: 6rem; }
+
+  .container--loader {
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
