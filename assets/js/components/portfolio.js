@@ -79,7 +79,7 @@ const modalProjects = (data, i) => {
     const modal = $('<section class="container container--modal"></section>');
 
     const row = $('<div class="row"></div>');
-    const colMockUp = $('<div class="col-xs-12 col-lg-3 col-lg-offset-2"></div>');
+    const colMockUp = $('<div class="col-xs-12 col-lg-3 col-lg-offset-2 hidden-xs"></div>');
     const divMockup = $('<div class="container--mockup"></div>');
     const mockUp = $('<img class="mockup-cellphone" src="assets/img/' + state.language.mockup + '"/>');
     const insideMockUp = $('<div class="container--iframe"></div>');

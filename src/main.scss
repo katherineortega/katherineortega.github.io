@@ -425,7 +425,7 @@ hr {
 .logo-proyecto {
   border: 10px solid;
   height: 400px;
-  padding: 0 13% 95% 7%;
+  padding: 0 13% 90% 7%;
   display: flex;
   align-items: center;
   &.pinterest-border {
@@ -434,8 +434,8 @@ hr {
   &.yape-border {
     border-color: $yape;
     img {
-      margin: 0 auto 0 20%;
-      height: 100px;
+      margin: 0 auto 0 35%;
+      height: 70px;
       width: auto;
     }
   }
