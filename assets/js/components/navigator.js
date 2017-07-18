@@ -133,7 +133,7 @@ const Navigator = (wrapper) => {
     mainMenu.on('click', () => {
         const menu = $('<div class="container--menu container show-page page-ontop"></div>');
         const row = $('<div class="row"></div>');
-        const closeMenu = $('<span class="icon icon-cross icon-back"></span>');
+        const closeMenu = $('<span class="icon-cross icon-back"></span>');
 
         let page = actualPage,
             prevPage = page - 1,
