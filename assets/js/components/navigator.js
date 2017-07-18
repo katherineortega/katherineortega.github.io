@@ -143,8 +143,8 @@ const Navigator = (wrapper) => {
         $('#' + page + '').removeClass(removeAnimation);
         $('#' + nextPage + '').removeClass(removeAnimation);
 
-        $('#' + page + '').addClass(show + leftOutClass);
-        menu.addClass(show + leftInClass);
+        $('#' + page + '').addClass(show + rightOutClass);
+        menu.addClass(show + rightInClass);
 
         row.append(closeMenu);
         menu.append(row);
@@ -159,8 +159,8 @@ const Navigator = (wrapper) => {
             $('#' + actualPage + '').removeClass(removeAnimation);
             menu.removeClass(removeAnimation);
 
-            $('#' + actualPage + '').addClass(show + rightInClass);
-            menu.addClass(show + rightOutClass);
+            $('#' + actualPage + '').addClass(show + leftInClass);
+            menu.addClass(show + leftOutClass);
             setTimeout(() => {
                 menu.remove();
                 $(window).on('keydown', (i) => {
