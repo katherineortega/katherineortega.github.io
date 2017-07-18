@@ -47,11 +47,11 @@
       },
       "skills": {
         "title": "Habili dades",
-        "brief" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "brief" : "Creativa, autodidacta y audaz. Confío en mi instinto para resolver problemas. Tech: jQuery, CSS, HTML5, Javascript, Gulp, Node.js, Git, Github, SASS, Bootstrap, Materialize, Illustrator, Photoshop, InDesign"
       },
       "portfolio": {
         "title": "Porta folio",
-        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "brief": "Durante los últimos 6 meses me he enfrentado a diversos retos donde puse a prueba todo lo aprendido. ¡Echa un vistazo a mis mejores proyectos!"
       },
       "contact": "Hable mos"
     },
@@ -62,19 +62,19 @@
     "projects": [
       {
         "logo": "logo-pinterest.png",
-        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Board que guarda colecciones de imágenes recolectadas de toda al web."
       },
       {
         "logo": "logo-yape.png",
-        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Aplicación móvil del BCP que facilita la transferencia de dinero."
       },
       {
         "logo": "logo-pokedex.png",
-        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Página diseñada para personas que desean incursionar en el mundo de la gastronomía."
       },
       {
         "logo": "logo-yummy.png",
-        "synopsis": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "synopsis": "Aplicación web que te permite conocer los datos de todos los pokemones"
       }
     ],
     "more": "Conóce más del proyecto aquí",
