@@ -225,13 +225,15 @@ body {
 .main-logo {
   @include box-sizing(border-box);
   position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: 40px;
-
-  img {
+  bottom: 6%;
+  left: 6%;
+  a {
+    text-decoration: none;
+  }
+  span {
     cursor: pointer;
-    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
   }
 }
 
@@ -579,6 +581,9 @@ footer {
   .navegadores {
     bottom: 5%;
     right: 3%;
+    .icon{
+
+    }
   }
   .title {
     font-size: 7rem;

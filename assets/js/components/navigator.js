@@ -18,7 +18,8 @@ const Navigator = (wrapper) => {
 
     //logo
     const divLogo = $('<div class="main-logo"></div>');
-    const logo = $('<a href="' + state.data.portfolio + '"><img src="assets/img/' + state.data.logo + '"/></a>');
+    const logo = $('<a href="' + state.data.portfolio + '"><span class="icon' +
+        ' icon-menu"></span></a>');
 
     divLogo.append(logo);
 

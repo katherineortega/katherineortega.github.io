@@ -23,7 +23,7 @@
   font-size: 2rem;
   cursor: pointer;
   margin: 10% 0;
-  color: #365164; }
+  color: #5a87a6; }
   .icon-hide {
     opacity: .3; }
   .icon-github:before {
@@ -1098,12 +1098,14 @@ body {
 .main-logo {
   box-sizing: border-box;
   position: absolute;
-  bottom: 5%;
-  left: 5%;
-  width: 40px; }
-  .main-logo img {
+  bottom: 6%;
+  left: 6%; }
+  .main-logo a {
+    text-decoration: none; }
+  .main-logo span {
     cursor: pointer;
-    width: 100%; }
+    font-size: 3rem;
+    font-weight: 600; }
 
 .link {
   outline: none;

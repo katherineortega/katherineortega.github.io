@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?vkys9z');
-  src:  url('../fonts/icomoon.eot?vkys9z#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?vkys9z');
+  src: url('../fonts/icomoon.eot?vkys9z#iefix') format('embedded-opentype'),
   url('../fonts/icomoon.ttf?vkys9z') format('truetype'),
   url('../fonts/icomoon.woff?vkys9z') format('woff'),
   url('../fonts/icomoon.svg?vkys9z#icomoon') format('svg');
@@ -29,7 +29,7 @@
   font-size: 2rem;
   cursor: pointer;
   margin: 10% 0;
-  color: #365164;
+  color: lighten(#365164, 20%);
 
   &-hide {
     opacity: .3;
