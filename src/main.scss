@@ -418,12 +418,13 @@ hr {
   text-align: right;
 }
 
-.projects{
-  margin-bottom: 20%;
+.projects {
+  margin-bottom: 30%;
 }
+
 .logo-proyecto {
   border: 10px solid;
-  height: 450px;
+  height: 400px;
   padding: 0 13% 95% 7%;
   display: flex;
   align-items: center;
@@ -449,12 +450,10 @@ hr {
 }
 
 .text-proyecto {
-  background-color: #0d0d0d;
   position: absolute;
-  height: 300px;
+  height: 250px;
   padding: 0 5%;
   top: 30%;
-  font-size: 1rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -480,7 +479,7 @@ hr {
 .container--contact {
   .text {
     font-size: 1rem;
-    a, .contact-icon{
+    a, .contact-icon {
       &:hover {
         color: $yellow;
       }
@@ -513,7 +512,7 @@ footer {
   .developer {
     color: $darken-blue;
   }
-  p{
+  p {
     width: 55%;
     font-size: 0.8rem;
     margin-bottom: 10%;
@@ -541,57 +540,58 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .link{
+  .link {
     font-size: 6rem;
   }
-  .container{
-    &--loader{
+  .container {
+    &--loader {
       font-size: 2rem;
     }
-    .row{
+    .row {
       flex-direction: row;
     }
     &--contact {
-      .text{
-      font-size: 1.8rem;
+      .text {
+        font-size: 1.8rem;
       }
     }
   }
-  .main-logo{
+  .main-logo {
     top: 5%;
     left: 2%;
   }
   .projects {
     margin-bottom: inherit;
   }
-  .logo-proyecto{
+  .logo-proyecto {
     height: 550px;
     padding: 0 13% 0 7%;
-    &.yape-border{
-      img{
+    &.yape-border {
+      img {
         margin: 0 auto 0 30%;
         height: 150px;
       }
     }
   }
-  .text-proyecto{
+  .text-proyecto {
+    background-color: #0d0d0d;
     border: 5px solid #686369;
     height: 400px;
     top: 13%;
     font-size: 1.3rem;
   }
-  .navegadores{
+  .navegadores {
     bottom: 5%;
     right: 3%;
   }
-  .title{
+  .title {
     font-size: 7rem;
   }
-  .text{
+  .text {
     font-size: 1.2rem;
   }
-  footer{
-    p{
+  footer {
+    p {
       width: 100%;
       font-size: 1.2rem;
       margin-bottom: 20px;

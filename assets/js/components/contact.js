@@ -9,7 +9,7 @@ const Contact = () => {
     const title = $('<h1 class="title">' + state.language.menu.contact + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-10 col-lg-4 col-lg-offset-1"></div>');
+    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
     const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span><a' +
         ' href="tel:+51'+state.data.phone+'">(+51) ' + state.data.phone + '</a></p>');
     const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a' +

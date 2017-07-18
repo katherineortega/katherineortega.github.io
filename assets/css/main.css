@@ -1251,11 +1251,11 @@ hr {
   text-align: right; }
 
 .projects {
-  margin-bottom: 20%; }
+  margin-bottom: 30%; }
 
 .logo-proyecto {
   border: 10px solid;
-  height: 450px;
+  height: 400px;
   padding: 0 13% 95% 7%;
   display: flex;
   align-items: center; }
@@ -1274,12 +1274,10 @@ hr {
     padding-left: 15%; }
 
 .text-proyecto {
-  background-color: #0d0d0d;
   position: absolute;
-  height: 300px;
+  height: 250px;
   padding: 0 5%;
   top: 30%;
-  font-size: 1rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -1361,6 +1359,7 @@ footer {
       height: 150px; }
 
   .text-proyecto {
+    background-color: #0d0d0d;
     border: 5px solid #686369;
     height: 400px;
     top: 13%;
