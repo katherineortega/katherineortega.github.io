@@ -23,7 +23,7 @@
   font-size: 2rem;
   cursor: pointer;
   margin: 10% 0;
-  color: #5a87a6; }
+  color: #486c85; }
   .icon-hide {
     opacity: .3; }
   .icon-github:before {
@@ -1095,14 +1095,14 @@ body {
     font-size: 2.3rem;
     font-weight: 600; }
 
-.main-logo {
+.main-menu {
   box-sizing: border-box;
   position: absolute;
   bottom: 6%;
   left: 6%; }
-  .main-logo a {
+  .main-menu a {
     text-decoration: none; }
-  .main-logo span {
+  .main-menu span {
     cursor: pointer;
     font-size: 3rem;
     font-weight: 600; }
@@ -1158,7 +1158,6 @@ body {
         position: absolute;
         left: 0;
         width: 100%;
-        color: #365164;
         -webkit-transition: -webkit-transform 0.5s;
         transition: transform 0.5s; }
       .link--title span:nth-child(2) {
@@ -1343,7 +1342,7 @@ footer {
   .container--contact .text {
     font-size: 1.8rem; }
 
-  .main-logo {
+  .main-menu {
     top: 5%;
     left: 2%; }
 

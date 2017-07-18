@@ -13,15 +13,10 @@ const leftInClass = ' page-moveFromLeft ';
 
 const removeAnimation = show + upInClass + upOutClass + downInClass + downOutClass + rightInClass + rightOutClass + leftInClass + leftOutClass;
 
+let actualPage = 1;
+
 const Navigator = (wrapper) => {
     const container = $('<div class="navegadores"></div>');
-
-    //logo
-    const divLogo = $('<div class="main-logo"></div>');
-    const logo = $('<a href="' + state.data.portfolio + '"><span class="icon' +
-        ' icon-menu"></span></a>');
-
-    divLogo.append(logo);
 
     //Back Modal
     const backPage = $('<span class="icon-back icon-cross"></span>');
@@ -58,8 +53,9 @@ const Navigator = (wrapper) => {
 
             $('#' + page + '').addClass(show + downOutClass);
             $('#' + nextPage + '').addClass(show + downInClass);
-
             counter++;
+            actualPage = counter;
+            console.log(counter);
         } else {
             down.addClass('icon-hide');
             $('#8').addClass(show);
@@ -78,8 +74,9 @@ const Navigator = (wrapper) => {
 
             $('#' + page + '').addClass(show + upOutClass);
             $('#' + prevPage + '').addClass(show + upInClass);
-
             counter--;
+            actualPage = counter;
+            console.log(counter);
         } else {
             up.addClass('icon-hide');
             $('#1').addClass(show);
@@ -104,7 +101,7 @@ const Navigator = (wrapper) => {
 
         setTimeout(() => {
             $('.navegadores').removeClass(' hide-fixed ');
-            $('.main-logo').removeClass(' hide-fixed ');
+            $('.main-menu').removeClass(' hide-fixed ');
             $('.container--modal').remove();
             $(window).on('keydown', (i) => {
                 const key = i.keyCode || i.which;
@@ -126,6 +123,61 @@ const Navigator = (wrapper) => {
             downPage();
         }
     });
+
+    //menu
+    const divLogo = $('<div class="main-menu"></div>');
+    const mainMenu = $('<a href="#"><span class="icon' +
+        ' icon-menu"></span></a>');
+
+
+    mainMenu.on('click', () => {
+        const menu = $('<div class="container--menu container show-page page-ontop"></div>');
+        const row = $('<div class="row"></div>');
+        const closeMenu = $('<span class="icon icon-cross icon-back"></span>');
+
+        let page = actualPage,
+            prevPage = page - 1,
+            nextPage = page + 1;
+
+        $('#' + prevPage + '').removeClass(removeAnimation);
+        $('#' + page + '').removeClass(removeAnimation);
+        $('#' + nextPage + '').removeClass(removeAnimation);
+
+        $('#' + page + '').addClass(show + leftOutClass);
+        menu.addClass(show + leftInClass);
+
+        row.append(closeMenu);
+        menu.append(row);
+        $(window).off('keydown');
+
+        if (state.language == state.english) {
+            $('body').addClass('english');
+            menu.addClass('english');
+        }
+
+        closeMenu.on('click', () => {
+            $('#' + actualPage + '').removeClass(removeAnimation);
+            menu.removeClass(removeAnimation);
+
+            $('#' + actualPage + '').addClass(show + rightInClass);
+            menu.addClass(show + rightOutClass);
+            setTimeout(() => {
+                menu.remove();
+                $(window).on('keydown', (i) => {
+                    const key = i.keyCode || i.which;
+                    if (key == 38) {
+                        upPage();
+                    } else if (key == 40) {
+                        downPage();
+                    }
+                });
+            }, 500);
+        });
+        wrapper.append(menu);
+    });
+
+
+    divLogo.append(mainMenu);
 
     wrapper.append(divLogo);
     wrapper.append(container);

@@ -143,7 +143,7 @@ const modalProjects = (data, i) => {
     modal.addClass(show + rightInClass);
 
     $('.navegadores').addClass(' hide-fixed ');
-    $('.main-logo').addClass(' hide-fixed ');
+    $('.main-menu').addClass(' hide-fixed ');
     //End Page Transition
 
     if (state.language == state.english) {
