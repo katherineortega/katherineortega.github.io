@@ -33,10 +33,10 @@ const projects = (container) => {
         const project = $('<section id="' + i + '" class="container container--project"' +
             ' data-page="' + i + '"></section>');
 
-        const divProject = $('<div class="col-lg-10 col-lg-offset-1"></div>');
-        const divLogo = $('<div class="col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
+        const divProject = $('<div class="col-xs-12 col-lg-10 col-lg-offset-1 projects"></div>');
+        const divLogo = $('<div class="col-xs-12 col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
         const logo = $('<img class="img-responsive" src="assets/img/' + state.language.projects[index].logo + '" alt="' + data.name + '">');
-        const divBrief = $('<div class="col-lg-6 col-lg-offset-6 text-proyecto"></div>');
+        const divBrief = $('<div class="col-xs-9 col-xs-offset-1 col-lg-6 col-lg-offset-6 text-proyecto"></div>');
         const brief = $('<p>' + state.language.projects[index].synopsis + '</p>');
         const divLink = $('<p></p>');
         const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + ' <span class="icon-arrow-right"></span></a>');
@@ -44,6 +44,7 @@ const projects = (container) => {
         if (index == 1 || index == 3) {
             divLogo.addClass('col-lg-offset-5');
             divBrief.removeClass('col-lg-offset-6');
+            divBrief.addClass('col-lg-offset-0');
         }
 
         divLink.append(link);

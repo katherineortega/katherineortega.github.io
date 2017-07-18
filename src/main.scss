@@ -418,10 +418,13 @@ hr {
   text-align: right;
 }
 
+.projects{
+  margin-bottom: 20%;
+}
 .logo-proyecto {
   border: 10px solid;
-  height: 550px;
-  padding: 0 13% 0 7%;
+  height: 450px;
+  padding: 0 13% 95% 7%;
   display: flex;
   align-items: center;
   &.pinterest-border {
@@ -429,9 +432,9 @@ hr {
   }
   &.yape-border {
     border-color: $yape;
-    padding: 20%;
     img {
-      height: 150px;
+      margin: 0 auto 0 20%;
+      height: 100px;
       width: auto;
     }
   }
@@ -448,11 +451,10 @@ hr {
 .text-proyecto {
   background-color: #0d0d0d;
   position: absolute;
-  border: 5px solid #686369;
-  height: 400px;
+  height: 300px;
   padding: 0 5%;
-  top: 13%;
-  font-size: 1.3rem;
+  top: 30%;
+  font-size: 1rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -477,7 +479,12 @@ hr {
 
 .container--contact {
   .text {
-    font-size: 1.8rem;
+    font-size: 1rem;
+    a, .contact-icon{
+      &:hover {
+        color: $yellow;
+      }
+    }
   }
 }
 
@@ -544,10 +551,34 @@ footer {
     .row{
       flex-direction: row;
     }
+    &--contact {
+      .text{
+      font-size: 1.8rem;
+      }
+    }
   }
   .main-logo{
     top: 5%;
     left: 2%;
+  }
+  .projects {
+    margin-bottom: inherit;
+  }
+  .logo-proyecto{
+    height: 550px;
+    padding: 0 13% 0 7%;
+    &.yape-border{
+      img{
+        margin: 0 auto 0 30%;
+        height: 150px;
+      }
+    }
+  }
+  .text-proyecto{
+    border: 5px solid #686369;
+    height: 400px;
+    top: 13%;
+    font-size: 1.3rem;
   }
   .navegadores{
     bottom: 5%;
