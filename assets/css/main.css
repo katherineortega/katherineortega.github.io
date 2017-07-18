@@ -1043,9 +1043,6 @@ body {
       left: 5%; }
     .container--modal__info .icon-chevron-right {
       right: 5%; }
-    .container--modal__info .text {
-      font-size: 1rem;
-      letter-spacing: 0.1rem; }
     .container--modal__info .modal-title {
       font-size: 3rem;
       text-transform: uppercase; }

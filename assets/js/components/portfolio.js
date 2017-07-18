@@ -91,13 +91,13 @@ const modalProjects = (data, i) => {
     colText.append(title);
 
     const divOne = $('<div></div>');
-    const text = $('<p class="text one">' + state.language.projects[index].synopsis + '</p>');
-    const text2 = $('<p class="text two">' + state.language.projects[index].synopsis + '</p>');
+    const text = $('<p>' + state.language.projects[index].synopsis + '</p>');
+    const text2 = $('<p>' + state.language.projects[index].synopsis + '</p>');
     /*const iconNext = $('<span class="icon-chevron-right"></span>');*/
 
     const divTwo = $('<div class="info-project"></div>');
-    const text3 = $('<p class="text three">' + state.language.projects[index].synopsis + '</p>');
-    const text4 = $('<p class="text four">' + state.language.projects[index].synopsis + '</p>');
+    const text3 = $('<p>' + state.language.projects[index].synopsis + '</p>');
+    const text4 = $('<p>' + state.language.projects[index].synopsis + '</p>');
     /*const iconBack = $('<span class="icon-chevron-left"></span>');*/
 
     insideMockUp.append(iframe);
