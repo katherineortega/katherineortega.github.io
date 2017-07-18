@@ -85,7 +85,7 @@ const modalProjects = (data, i) => {
     const insideMockUp = $('<div class="container--iframe"></div>');
     const iframe = $('<iframe src="' + state.data.projects[index].link + '"><p>Your browser does not support iframes.</p></iframe>');
 
-    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1' +
+    const colText = $('<div class="col-xs-10 col-lg-4 col-lg-offset-1' +
         ' container--modal__info"></div>');
     const title = $('<h1 class="modal-title">' + state.data.projects[index].name + '</h1>');
     colText.append(title);
