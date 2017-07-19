@@ -184,9 +184,29 @@ body {
   }
 
   &--menu{
+    .col-menu{
+      margin-left: 11.33333%;
+    }
     .icon-cross{
       left: 5%;
       right: auto;
+    }
+    h1{
+      text-align: right;
+      font-size: 3rem;
+      a{
+        text-decoration: none;
+      }
+    }
+    .portfolio {
+      color: lighten($darken-blue, 15%);
+    }
+    .projects-menu{
+      h1{
+        text-transform: capitalize;
+        text-align: left;
+        color: lighten($darken-blue, 15%);
+      }
     }
   }
 }

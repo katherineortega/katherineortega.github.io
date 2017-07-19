@@ -135,6 +135,39 @@ const Navigator = (wrapper) => {
         const row = $('<div class="row"></div>');
         const closeMenu = $('<span class="icon-cross icon-back"></span>');
 
+        const indexMenu = $('<div class="col-lg-4 col-lg-offset-1 col-menu"></div>');
+        const projectsmenu = $('<div class="col-lg-5 col-lg-offset-1 projects-menu"></div>');
+
+        const menuskills = (state.language.menu.skills.title).split(" ").join("");
+        const menuportfolio = (state.language.menu.portfolio.title).split(" ").join("");
+        const menucontact = (state.language.menu.contact).split(" ").join("");
+
+        const home = $('<a href="'+state.data.portfolio+'"><h1>'+state.language.menu.home+'</h1></a>');
+        const about = $('<a href="#"><h1>'+state.language.menu.about.title+'</h1></a>');
+        const skills = $('<a href="#"><h1>'+menuskills+'</h1></a>');
+        const portfolio = $('<a href="#"><h1 class="portfolio">'+menuportfolio+'</h1></a>');
+        const contact = $('<a href="#"><h1>'+menucontact+'</h1></a>');
+
+        const vacio = $('<h1>_</h1>');
+        const pinterest = $('<a href="#"><h1>'+state.data.projects[0].name+'</a></h1>');
+        const yape = $('<a href="#"><h1>'+state.data.projects[1].name+'</h1></a>');
+        const pokedex = $('<a href="#"><h1>'+state.data.projects[2].name+'</h1></a>');
+        const yummy = $('<a href="#"><h1>'+state.data.projects[3].name+'</h1></a>');
+
+        projectsmenu.append(vacio);
+        projectsmenu.append(pinterest);
+        projectsmenu.append(yape);
+        projectsmenu.append(pokedex);
+        projectsmenu.append(yummy);
+
+        indexMenu.append(home);
+        indexMenu.append(about);
+        indexMenu.append(skills);
+        indexMenu.append(portfolio);
+        indexMenu.append(contact);
+        row.append(indexMenu);
+        row.append(projectsmenu);
+
         let page = actualPage,
             prevPage = page - 1,
             nextPage = page + 1;

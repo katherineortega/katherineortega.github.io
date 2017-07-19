@@ -1066,9 +1066,22 @@ body {
       border: 0;
       width: 100%;
       height: 100%; }
+  .container--menu .col-menu {
+    margin-left: 11.33333%; }
   .container--menu .icon-cross {
     left: 5%;
     right: auto; }
+  .container--menu h1 {
+    text-align: right;
+    font-size: 3rem; }
+    .container--menu h1 a {
+      text-decoration: none; }
+  .container--menu .portfolio {
+    color: #517996; }
+  .container--menu .projects-menu h1 {
+    text-transform: capitalize;
+    text-align: left;
+    color: #517996; }
 
 .show-page {
   visibility: visible;
