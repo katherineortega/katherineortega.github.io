@@ -49,8 +49,9 @@ const Navigator = (wrapper) => {
         const row = $('<div class="row"></div>');
         const closeMenu = $('<span class="icon-cross icon-back"></span>');
 
-        const indexMenu = $('<div class="col-lg-4 col-lg-offset-1 col-menu"></div>');
-        const projectsmenu = $('<div class="col-lg-5 col-lg-offset-1 projects-menu"></div>');
+        const indexMenu = $('<div class="col-lg-4 col-xs-offset-1 col-xs-4 col-menu"></div>');
+        const projectsmenu = $('<div class="col-lg-5 col-lg-offset-1 col-xs-4 col-xs-offset-1' +
+            ' projects-menu"></div>');
 
         const menuskills = (state.language.menu.skills.title).split(" ").join("");
         const menuportfolio = (state.language.menu.portfolio.title).split(" ").join("");

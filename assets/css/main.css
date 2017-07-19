@@ -1078,7 +1078,7 @@ body {
       outline: none; }
     .container--menu a h1 {
       text-align: right;
-      font-size: 3rem; }
+      font-size: 1.2rem; }
     .container--menu a .portfolio {
       color: #517996; }
   .container--menu .projects-menu h1 {
@@ -1360,6 +1360,8 @@ footer {
     flex-direction: row; }
   .container--contact .text {
     font-size: 1.8rem; }
+  .container--menu a h1 {
+    font-size: 3rem; }
 
   .main-menu {
     top: 5%;

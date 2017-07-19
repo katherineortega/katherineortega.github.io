@@ -199,7 +199,7 @@ body {
       }
       h1 {
         text-align: right;
-        font-size: 3rem;
+        font-size: 1.2rem;
       }
       .portfolio {
         color: lighten($darken-blue, 15%);
@@ -584,6 +584,13 @@ footer {
     &--contact {
       .text {
         font-size: 1.8rem;
+      }
+    }
+    &--menu{
+      a{
+        h1{
+          font-size: 3rem;
+        }
       }
     }
   }
