@@ -148,8 +148,8 @@ const Navigator = (wrapper) => {
         const portfolio = $('<a href="#"><h1 class="portfolio">'+menuportfolio+'</h1></a>');
         const contact = $('<a href="#"><h1>'+menucontact+'</h1></a>');
 
-        const vacio = $('<h1>_</h1>');
-        const pinterest = $('<a href="#"><h1>'+state.data.projects[0].name+'</a></h1>');
+        const vacio = $('<a><h1>_</h1></a>');
+        const pinterest = $('<a href="#"><h1>'+state.data.projects[0].name+'</h1></a>');
         const yape = $('<a href="#"><h1>'+state.data.projects[1].name+'</h1></a>');
         const pokedex = $('<a href="#"><h1>'+state.data.projects[2].name+'</h1></a>');
         const yummy = $('<a href="#"><h1>'+state.data.projects[3].name+'</h1></a>');

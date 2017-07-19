@@ -1071,13 +1071,16 @@ body {
   .container--menu .icon-cross {
     left: 5%;
     right: auto; }
-  .container--menu h1 {
-    text-align: right;
-    font-size: 3rem; }
-    .container--menu h1 a {
-      text-decoration: none; }
-  .container--menu .portfolio {
-    color: #517996; }
+  .container--menu a {
+    text-decoration: none;
+    color: #e0dcdd; }
+    .container--menu a:focus {
+      outline: none; }
+    .container--menu a h1 {
+      text-align: right;
+      font-size: 3rem; }
+    .container--menu a .portfolio {
+      color: #517996; }
   .container--menu .projects-menu h1 {
     text-transform: capitalize;
     text-align: left;
@@ -1339,6 +1342,8 @@ footer {
   background-color: #fff;
   color: #686369; }
   .english .container--contact .text a {
+    color: #686369; }
+  .english .container--menu a {
     color: #686369; }
   .english .text-proyecto {
     background: #fff; }

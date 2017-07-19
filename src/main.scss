@@ -183,26 +183,30 @@ body {
     }
   }
 
-  &--menu{
-    .col-menu{
+  &--menu {
+    .col-menu {
       margin-left: 11.33333%;
     }
-    .icon-cross{
+    .icon-cross {
       left: 5%;
       right: auto;
     }
-    h1{
-      text-align: right;
-      font-size: 3rem;
-      a{
-        text-decoration: none;
+    a {
+      text-decoration: none;
+      color: $lighten-grey;
+      &:focus {
+        outline: none;
+      }
+      h1 {
+        text-align: right;
+        font-size: 3rem;
+      }
+      .portfolio {
+        color: lighten($darken-blue, 15%);
       }
     }
-    .portfolio {
-      color: lighten($darken-blue, 15%);
-    }
-    .projects-menu{
-      h1{
+    .projects-menu {
+      h1 {
         text-transform: capitalize;
         text-align: left;
         color: lighten($darken-blue, 15%);
@@ -544,9 +548,16 @@ footer {
 .english {
   background-color: $white;
   color: $grey;
-  .container--contact {
-    .text {
-      a {
+  .container {
+    &--contact {
+      .text {
+        a {
+          color: $grey;
+        }
+      }
+    }
+    &--menu{
+      a{
         color: $grey;
       }
     }
@@ -603,7 +614,7 @@ footer {
   .navegadores {
     bottom: 5%;
     right: 3%;
-    .icon{
+    .icon {
 
     }
   }
