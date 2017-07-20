@@ -18,10 +18,10 @@ const Loader = (wrapper) => {
     profile.append(pCareer);
 
     const language = $('<div class="btn"></div>');
-    const english = $('<span class="btn"><a href="#" data-hover="English">English</a></span>');
+    //const english = $('<span class="btn"><a href="#" data-hover="English">English</a></span>');
     const spanish = $('<span class="btn"><a href="#" data-hover="Español">Español</a></span>');
     language.append(spanish);
-    language.append(english);
+    //language.append(english);
     profile.append(language);
     loader.append(profile);
 
@@ -50,13 +50,13 @@ const Loader = (wrapper) => {
         }, 1300);
         content(wrapper);
     });
-    english.on('click', () => {
+    /*english.on('click', () => {
         setTimeout(() => {
             loader.addClass('page-moveToLeftEasing page-ontop');
         }, 1300);
         state.language = state.english;
         content(wrapper);
-    });
+    });*/
 
     return loader;
 };
