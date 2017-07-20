@@ -202,6 +202,7 @@ const Navigator = (wrapper) => {
 
         if (counter !== 8) {
             up.removeClass('icon-hide');
+            down.removeClass('icon-hide');
             page = $('#' + counter + '').data('page');
             nextPage = page + 1;
 
@@ -221,6 +222,7 @@ const Navigator = (wrapper) => {
 
         if (counter !== 1) {
             down.removeClass('icon-hide');
+            up.removeClass('icon-hide');
             page = $('#' + counter + '').data('page');
             prevPage = page - 1;
 
