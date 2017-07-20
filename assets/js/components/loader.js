@@ -19,7 +19,7 @@ const Loader = (wrapper) => {
 
     const language = $('<div class="btn"></div>');
     //const english = $('<span class="btn"><a href="#" data-hover="English">English</a></span>');
-    const spanish = $('<span class="btn"><a href="#" data-hover="Español">Español</a></span>');
+    const spanish = $('<span class="btn"><a href="#" data-hover="Ingresar">Ingresar</a></span>');
     language.append(spanish);
     //language.append(english);
     profile.append(language);
