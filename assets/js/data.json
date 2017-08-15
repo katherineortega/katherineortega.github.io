@@ -43,11 +43,11 @@
       "home": "Inicio",
       "about": {
         "title": "Sobre Mi",
-        "brief": ""
+        "brief": "Hola de nuevo, Mi nombre es Katherine C. Ortega Ramos, soy Desarrolladora Front-end & Diseñadora gráfica. Mi amor por la programación empezó hace menos de un año gracias a un curso del instituto, desde entonces me han interesado la creacion de aplicaciones web que faciliten la vida a las personas."
       },
       "skills": {
         "title": "Habili dades",
-        "brief": "Creativa, autodidacta y audaz. Confío en mi instinto para resolver problemas. Tech: jQuery, CSS, HTML5, Javascript, Gulp, Node.js, Git, Github, SASS, Bootstrap, Materialize, Illustrator, Photoshop, InDesign"
+        "brief": "Creativa, autodidacta y audaz. Confío en mi instinto para resolver problemas. Habilidades Tech: jQuery, CSS, HTML5, Javascript, Gulp, Node.js, Git, Github, SASS, Bootstrap, Materialize, Illustrator, Photoshop, InDesign"
       },
       "portfolio": {
         "title": "Porta folio",
