@@ -187,10 +187,6 @@ body {
     .col-menu {
       margin-left: 11.33333%;
     }
-    .icon-cross {
-      left: 3%;
-      right: auto;
-    }
     a {
       text-decoration: none;
       color: $lighten-grey;
@@ -503,43 +499,38 @@ hr {
 .container--contact {
   .text {
     font-size: 1rem;
-    a, .contact-icon {
-      &:hover {
+    a {
+      &:hover .contact-icon{
         color: $yellow;
       }
     }
+    .contact-icon {
+      margin-right: 20px;
+      color: $grey;/*
+      &:hover {
+        color: $yellow;
+      }*/
+    }
   }
-}
 
-.contact-icon {
-  margin-right: 20px;
-  color: $grey;
-  &:hover {
-    color: $yellow;
-  }
-}
 
-footer {
-  position: absolute;
-  bottom: 1%;
-  width: 100%;
-  text-align: center;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
-  a {
-    text-decoration: none;
-  }
-  .laboratoria {
-    color: $yellow;
-  }
-  .developer {
-    color: $darken-blue;
-  }
-  p {
-    width: 55%;
-    font-size: 0.8rem;
-    margin-bottom: 10%;
+  footer {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: $yellow;
+    }
+    p {
+      width: 55%;
+      font-size: 0.8rem;
+      margin-bottom: 10%;
+    }
   }
 }
 
@@ -556,8 +547,8 @@ footer {
         }
       }
     }
-    &--menu{
-      a{
+    &--menu {
+      a {
         color: $grey;
       }
     }
@@ -570,7 +561,7 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .link {
     font-size: 6rem;
   }
@@ -586,9 +577,9 @@ footer {
         font-size: 1.8rem;
       }
     }
-    &--menu{
-      a{
-        h1{
+    &--menu {
+      a {
+        h1 {
           font-size: 3rem;
         }
       }
@@ -596,7 +587,8 @@ footer {
   }
   .main-menu {
     top: 5%;
-    left: 2%;
+    right: 3%;
+    left: auto;
   }
   .projects {
     margin-bottom: inherit;

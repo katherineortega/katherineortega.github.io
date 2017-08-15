@@ -5,11 +5,11 @@ const Portfolio = () => {
         '  data-page="3"></section>');
     const row = $('<div class="row"></div>');
 
-    const colTitle = $('<div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-1"></div>');
+    const colTitle = $('<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1"></div>');
     const title = $('<h1 class="title">' + state.language.menu.portfolio.title + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-10 col-lg-4 col-lg-offset-1"></div>');
+    const colText = $('<div class="col-xs-10 col-md-4 col-md-offset-1"></div>');
     const text = $('<p class="text">' + state.language.menu.portfolio.brief + '</p>');
 
     colTitle.append(title);
@@ -33,18 +33,18 @@ const projects = (container) => {
         const project = $('<section id="' + i + '" class="container container--project"' +
             ' data-page="' + i + '"></section>');
 
-        const divProject = $('<div class="col-xs-12 col-lg-10 col-lg-offset-1 projects"></div>');
-        const divLogo = $('<div class="col-xs-12 col-lg-7 logo-proyecto ' + data.name + '-border"></div>');
+        const divProject = $('<div class="col-xs-12 col-md-10 col-md-offset-1 projects"></div>');
+        const divLogo = $('<div class="col-xs-12 col-md-7 logo-proyecto ' + data.name + '-border"></div>');
         const logo = $('<img class="img-responsive" src="assets/img/' + state.language.projects[index].logo + '" alt="' + data.name + '">');
-        const divBrief = $('<div class="col-xs-9 col-xs-offset-1 col-lg-6 col-lg-offset-6 text-proyecto"></div>');
+        const divBrief = $('<div class="col-xs-9 col-xs-offset-1 col-md-6 col-md-offset-6 text-proyecto"></div>');
         const brief = $('<p>' + state.language.projects[index].synopsis + '</p>');
         const divLink = $('<p></p>');
         const link = $('<a class="' + data.name + '-color" href="#">' + state.language.more + ' <span class="icon-arrow-right"></span></a>');
 
         if (index == 1 || index == 3) {
-            divLogo.addClass('col-lg-offset-5');
-            divBrief.removeClass('col-lg-offset-6');
-            divBrief.addClass('col-lg-offset-0');
+            divLogo.addClass('col-md-offset-5');
+            divBrief.removeClass('col-md-offset-6');
+            divBrief.addClass('col-md-offset-0');
         }
 
         divLink.append(link);
@@ -79,13 +79,13 @@ const modalProjects = (data, i) => {
     const modal = $('<section class="container container--modal"></section>');
 
     const row = $('<div class="row"></div>');
-    const colMockUp = $('<div class="col-xs-12 col-lg-3 col-lg-offset-2 hidden-xs"></div>');
+    const colMockUp = $('<div class="col-xs-12 col-md-3 col-md-offset-2 hidden-xs"></div>');
     const divMockup = $('<div class="container--mockup"></div>');
     const mockUp = $('<img class="mockup-cellphone" src="assets/img/' + state.language.mockup + '"/>');
     const insideMockUp = $('<div class="container--iframe"></div>');
     const iframe = $('<iframe src="' + state.data.projects[index].link + '"><p>Your browser does not support iframes.</p></iframe>');
 
-    const colText = $('<div class="col-xs-10 col-lg-4 col-lg-offset-1' +
+    const colText = $('<div class="col-xs-10 col-md-4 col-md-offset-1' +
         ' container--modal__info"></div>');
     const title = $('<h1 class="modal-title">' + state.data.projects[index].name + '</h1>');
     colText.append(title);

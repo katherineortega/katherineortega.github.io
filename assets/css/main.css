@@ -1068,9 +1068,6 @@ body {
       height: 100%; }
   .container--menu .col-menu {
     margin-left: 11.33333%; }
-  .container--menu .icon-cross {
-    left: 5%;
-    right: auto; }
   .container--menu a {
     text-decoration: none;
     color: #e0dcdd; }
@@ -1310,16 +1307,16 @@ hr {
 
 .container--contact .text {
   font-size: 1rem; }
-  .container--contact .text a:hover, .container--contact .text .contact-icon:hover {
+  .container--contact .text a:hover .contact-icon {
     color: #F4BD44; }
-
-.contact-icon {
-  margin-right: 20px;
-  color: #686369; }
-  .contact-icon:hover {
-    color: #F4BD44; }
-
-footer {
+  .container--contact .text .contact-icon {
+    margin-right: 20px;
+    color: #686369;
+             /*
+&:hover {
+  color: $yellow;
+}*/ }
+.container--contact footer {
   position: absolute;
   bottom: 1%;
   width: 100%;
@@ -1327,13 +1324,10 @@ footer {
   font-size: 1.3rem;
   display: flex;
   justify-content: center; }
-  footer a {
-    text-decoration: none; }
-  footer .laboratoria {
+  .container--contact footer a {
+    text-decoration: none;
     color: #F4BD44; }
-  footer .developer {
-    color: #365164; }
-  footer p {
+  .container--contact footer p {
     width: 55%;
     font-size: 0.8rem;
     margin-bottom: 10%; }
@@ -1350,7 +1344,7 @@ footer {
   .english .title {
     color: #365164; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .link {
     font-size: 6rem; }
 
@@ -1365,7 +1359,8 @@ footer {
 
   .main-menu {
     top: 5%;
-    left: 2%; }
+    right: 3%;
+    left: auto; }
 
   .projects {
     margin-bottom: inherit; }

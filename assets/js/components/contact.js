@@ -5,21 +5,15 @@ const Contact = () => {
         ' data-page="8"></section>');
     const row = $('<div class="row"></div>');
 
-    const colTitle = $('<div class="col-xs-8 col-xs-offset-2 col-lg-4 col-lg-offset-1"></div>');
+    const colTitle = $('<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1"></div>');
     const title = $('<h1 class="title">' + state.language.menu.contact + '</h1>');
     //const hr = $('<hr>');
 
-    const colText = $('<div class="col-xs-12 col-lg-4 col-lg-offset-1"></div>');
-    const number = $('<p class="text"><span class="contact-icon icon-smartphone"></span><a' +
-        ' href="tel:+51'+state.data.phone+'">(+51) ' + state.data.phone + '</a></p>');
-    const email = $('<p class="text"><span class="contact-icon icon-mail"></span><a' +
-        ' href="mailto:'+state.data.email+'?Subject='+state.language.sendEmail+'"' +
-        ' target="_blank">' + state.data.email + '</a></p>');
-    const github = $('<p class="text"><span class="contact-icon icon-github"></span><a' +
-        ' href="' + state.data.github + '" target="_blank">GitHub</a></p>');
-    const linkedin = $('<p class="text"><span class="contact-icon icon-linkedin"></span><a' +
-        ' href="' + state.data.linkedin + '" target="_blank">LinkedIn</a></p>');
-
+    const colText = $('<div class="col-xs-12 col-md-4 col-md-offset-1"></div>');
+    const number = $(`<p class="text"><a href="tel:+51 ${state.data.phone}"><span class="contact-icon icon-smartphone"></span>(+51) ${state.data.phone}</a></p>`);
+    const email = $(`<p class="text"><a href="mailto:${state.data.email}?Subject=${state.language.sendEmail}" target="_blank"><span class="contact-icon icon-mail"></span>${state.data.email}</a></p>`);
+    const github = $(`<p class="text"><a href="${state.data.github}" target="_blank"><span class="contact-icon icon-github"></span>GitHub</a></p>`);
+    const linkedin = $(`<p class="text"><a href="${state.data.linkedin}" target="_blank"><span class="contact-icon icon-linkedin"></span>LinkedIn</a></p>`);
 
     colText.append(number);
     colText.append(email);
@@ -27,14 +21,11 @@ const Contact = () => {
     colText.append(linkedin);
 
     const footer = $('<footer></footer>');
-    const p = $('<p>' + state.data.copyright + ' | ' + state.language.footer.made + ' <a href="' + state.data.laboratoria + '"' +
-        ' class="laboratoria" target="_blank">Laboratoria</a> ' + state.language.footer.by + ' <a href="' + state.data.portfolio + '"' +
-        ' class="developer">' + state.data.name + ' ' + state.data.lastName + '</a></p>');
+    const p = $(`<p>${state.data.copyright} | ${state.language.made}<a href="${state.data.portfolio}">${state.data.name} ${state.data.lastName}</a></p>`);
 
     footer.append(p);
 
     colTitle.append(title);
-    //colTitle.append(hr);
     row.append(colTitle);
     row.append(colText);
     row.append(footer);

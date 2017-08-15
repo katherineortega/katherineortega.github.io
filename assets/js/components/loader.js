@@ -6,7 +6,7 @@ const Loader = (wrapper) => {
     //Loader
     const loader = $('<div class="container container--loader show-page"></div>');
 
-    const pGreeting = $('<p>' + state.english.greeting + '</p>');
+    const pGreeting = $('<p>' + state.spanish.greeting + '</p>');
     const h1Name = $('<h1>' + state.data.name + '<br>' + state.data.lastName + '</h1>');
     const profile = $('<div class="">');
     const textName = $('<a class="link link--title" href="#">' + state.data.name + ' ' + state.data.lastName + '<span' +
@@ -19,7 +19,7 @@ const Loader = (wrapper) => {
 
     const language = $('<div class="btn"></div>');
     //const english = $('<span class="btn"><a href="#" data-hover="English">English</a></span>');
-    const spanish = $('<span class="btn"><a href="#" data-hover="Ingresar">Ingresar</a></span>');
+    const spanish = $('<span class="btn"><a href="#" data-hover="CONTINUAR">CONTINUAR</a></span>');
     language.append(spanish);
     //language.append(english);
     profile.append(language);

@@ -2,7 +2,7 @@
   "data": {
     "logo": "logo-kath.png",
     "name": "Katherine",
-    "lastName":"Ortega",
+    "lastName": "Ortega",
     "email": "katherine.ortegaramos@gmail.com",
     "phone": "992865356",
     "github": "https://github.com/katherineortega",
@@ -43,11 +43,11 @@
       "home": "Inicio",
       "about": {
         "title": "Sobre Mi",
-        "brief": "Hace menos de un año conocí la programación mientras cursaba mis estudios de Diseño. Fue amor a primera vista y partir de entonces no he dejado de aprender cada vez más."
+        "brief": ""
       },
       "skills": {
         "title": "Habili dades",
-        "brief" : "Creativa, autodidacta y audaz. Confío en mi instinto para resolver problemas. Tech: jQuery, CSS, HTML5, Javascript, Gulp, Node.js, Git, Github, SASS, Bootstrap, Materialize, Illustrator, Photoshop, InDesign"
+        "brief": "Creativa, autodidacta y audaz. Confío en mi instinto para resolver problemas. Tech: jQuery, CSS, HTML5, Javascript, Gulp, Node.js, Git, Github, SASS, Bootstrap, Materialize, Illustrator, Photoshop, InDesign"
       },
       "portfolio": {
         "title": "Porta folio",
@@ -62,11 +62,11 @@
     "projects": [
       {
         "logo": "logo-pinterest.png",
-        "synopsis": "Board que guarda colecciones de imágenes recolectadas de toda al web."
+        "synopsis": "Replica de la Plataforma Pinterest."
       },
       {
         "logo": "logo-yape.png",
-        "synopsis": "Aplicación móvil del BCP que facilita la transferencia de dinero."
+        "synopsis": "Replica de la Aplicación Movil del BCP que facilita la transferencia de dinero."
       },
       {
         "logo": "logo-pokedex.png",
@@ -80,10 +80,7 @@
     "more": "Conóce más del proyecto aquí",
     "mockup": "cellphone-black.png",
     "sendEmail": "Hola,%20escribe%20aquí",
-    "footer": {
-      "made": "Hecho con amor en ",
-      "by": " por "
-    }
+    "made": "Hecho con ❤ por "
   },
   "english": {
     "greeting": "Hi, I'm",
@@ -95,7 +92,7 @@
       },
       "skills": {
         "title": "Skills",
-        "brief" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
+        "brief": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem cum dicta eos impedit laboriosam maiores mollitia nemo provident quos repellat tempore, veniam veritatis? Esse exercitationem officiis quae saepe? Possimus."
       },
       "portfolio": {
         "title": " Port folio",
